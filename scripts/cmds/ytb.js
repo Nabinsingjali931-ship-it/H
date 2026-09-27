@@ -258,7 +258,7 @@ async function generateSearchImage(videos, query, type, quality) {
   ctx.fillText("📌 Reply 1-6 to Download • Type 'next' or 'prev' for more", W / 2, footerY);
   ctx.fillStyle = "#6c757d";
   ctx.font = "15px 'Segoe UI', Arial, sans-serif";
-  ctx.fillText("Developer: Mueid Mursalin Rifat", W / 2, footerY + 30);
+  ctx.fillText("Developer: Anik Islam Sadik", W / 2, footerY + 30);
   ctx.textAlign = "left";
 
   return canvas.toBuffer("image/jpeg", { quality: 0.92 });
@@ -278,13 +278,13 @@ module.exports = {
     longDescription: "Search and download YouTube audio (-a) or video (-v).",
     category: "media",
     guide: {
-      en: "{pn} <query/link> -a (audio)\n{pn} <query/link> -v (video)\n\nExamples:\n{prefix}yt Believer -a\n{prefix}yt https://youtube.com/watch?v=... -v"
+      en: "{pn} <query/link> -a (audio)\n{pn} <query/link> -v (video)\n\nExamples:\n{prefix}ytb Believer -a\n{prefix}ytb https://youtube.com/watch?v=... -v"
     }
   },
 
   onStart: async function ({ message, event, args, api }) {
     const raw = args.join(" ");
-    if (!raw) return message.reply("❗ Use: yt <query/link> -a or -v");
+    if (!raw) return message.reply("❗ Use: ytb <query/link> -a or -v");
 
     const isAudio = raw.includes("-a");
     const isVideo = raw.includes("-v");
@@ -369,7 +369,7 @@ module.exports = {
       const sent = await message.reply({ attachment: fs.createReadStream(cachePath) });
 
       global.GoatBot.onReply.set(sent.messageID, {
-        commandName: "yt",
+        commandName: "ytb",
         messageID: sent.messageID,
         author: event.senderID,
         data: videos,
@@ -522,4 +522,4 @@ async function downloadAndSendFile(downloadUrl, metadata, type, message, waitMsg
     console.error("Download and send error:", err.message);
     throw err;
   }
-      }
+}
