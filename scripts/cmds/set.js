@@ -22,18 +22,18 @@ function parseAmount(input) {
 module.exports = {
   config: {
     name: "set",
-    version: "1.2",
+    version: "1.3",
     author: "Anik Islam Sadik",
     role: 0,
     shortDescription: {
       en: "Set coins and experience points for a user"
     },
     longDescription: {
-      en: "Set coins and experience points for a user as desired (supports K, M, B, T, QT)"
+      en: "Set coins and experience points for a user (reply, tag or UID supported). Supports K, M, B, T, QT"
     },
     category: "economy",
     guide: {
-      en: "{pn}set [money|exp] [amount] (e.g. 100K, 10B, 5QT)"
+      en: "{pn}set [money|exp] [amount] (reply / @tag / uid) (e.g. 100K, 10B, 5QT)"
     }
   },
 
@@ -62,11 +62,17 @@ module.exports = {
     if (senderID === api.getCurrentUserID()) return;
 
     let targetUser;
+    const mentionIDs = Object.keys(event.mentions || {});
+    const uidArg = args.slice(2).find(a => /^\d{8,}$/.test(a));
+
     if (event.type === "message_reply") {
       targetUser = event.messageReply.senderID;
+    } else if (mentionIDs.length > 0) {
+      targetUser = mentionIDs[0];
+    } else if (uidArg) {
+      targetUser = uidArg;
     } else {
-      const mention = Object.keys(event.mentions);
-      targetUser = mention[0] || senderID;
+      targetUser = senderID;
     }
 
     const userData = await usersData.get(targetUser);
