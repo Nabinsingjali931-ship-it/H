@@ -2,7 +2,7 @@ module.exports = {
   config: {
     name: "slot",
     aliases: ["slots"],
-    version: "7.5",
+    version: "8.0",
     author: "Anik Islam Sadik",
     role: 0,
     countDown: 5,
@@ -13,7 +13,13 @@ module.exports = {
   },
 
   onStart: async ({ message, event, args, usersData, api }) => {
-    const { senderID, threadID } = event;
+    const { senderID } = event;
+
+    const MIN_BET = 100;
+    const MAX_SPINS = 100;
+    const RESET_TIME = 3600000;
+
+    const CHANCE = { x4: 8, x3: 22, x2: 40, x1: 75 };
 
     const formatMoney = (num) => {
       const n = Number(num);
@@ -32,27 +38,24 @@ module.exports = {
       return n.toLocaleString();
     };
 
-    function parseAmount(input) {
+    const parseAmount = (input) => {
       if (!input) return NaN;
-      let a = input.toLowerCase();
+      const a = input.toLowerCase();
       if (a.endsWith("k")) return parseFloat(a) * 1e3;
       if (a.endsWith("m")) return parseFloat(a) * 1e6;
       if (a.endsWith("b")) return parseFloat(a) * 1e9;
       if (a.endsWith("t")) return parseFloat(a) * 1e12;
       return parseInt(a);
-    }
+    };
 
     const betAmount = parseAmount(args[0]);
-    const minBet = 100;
 
-    if (isNaN(betAmount) || betAmount < minBet) {
-      return message.reply(`🎰 Minimum bet is 100$\nExample: /slot 1k`);
+    if (isNaN(betAmount) || betAmount < MIN_BET) {
+      return message.reply(`🎰 Minimum bet is ${MIN_BET}$\nExample: /slot 1k`);
     }
 
     let userData = await usersData.get(senderID);
-    if (!userData) {
-      userData = { money: 0 };
-    }
+    if (!userData) userData = { money: 0 };
     const currentMoney = Number(userData.money || 0);
 
     if (betAmount > currentMoney) {
@@ -61,62 +64,79 @@ module.exports = {
 
     if (!global.slotLimit) global.slotLimit = {};
     const now = Date.now();
-    if (!global.slotLimit[senderID] || (now - global.slotLimit[senderID].lastReset > 3600000)) {
+    if (!global.slotLimit[senderID] || now - global.slotLimit[senderID].lastReset > RESET_TIME) {
       global.slotLimit[senderID] = { count: 0, lastReset: now };
     }
 
-    const maxSpins = 100;
-    if (global.slotLimit[senderID].count >= maxSpins) {
-      return message.reply(`🚫 Daily limit reached (${maxSpins} spins)`);
+    if (global.slotLimit[senderID].count >= MAX_SPINS) {
+      return message.reply(`‼️ Spin limit reached (${MAX_SPINS} spins)`);
     }
 
-    const items = ["❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍", "🤎", "💖", "💗", "💘"];
-    let s = [];
+    const items = ["❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍"];
+    const rand = () => items[Math.floor(Math.random() * items.length)];
+    const shuffle = (arr) => arr.sort(() => Math.random() - 0.5);
 
-    const winRoll = Math.random() * 100;
-    let forceMatch = 0;
+    const pickOther = (used) => {
+      const pool = items.filter((i) => !used.includes(i));
+      return pool[Math.floor(Math.random() * pool.length)];
+    };
 
-    if (winRoll <= 10) forceMatch = 4;
-    else if (winRoll <= 25) forceMatch = 3;
-    else if (winRoll <= 45) forceMatch = 2;
+    const roll = Math.random() * 100;
+    let s;
 
-    if (forceMatch > 0) {
-      const luckyItem = items[Math.floor(Math.random() * items.length)];
-      s = Array(4).fill(null).map((_, i) =>
-        i < forceMatch ? luckyItem : items[Math.floor(Math.random() * items.length)]
-      );
-      s = s.sort(() => Math.random() - 0.5);
+    if (roll <= CHANCE.x4) {
+
+      const a = rand();
+      s = [a, a, a, a];
+    } else if (roll <= CHANCE.x3) {
+
+      const a = rand();
+      const b = pickOther([a]);
+      s = shuffle([a, a, a, b]);
+    } else if (roll <= CHANCE.x2) {
+
+      const a = rand();
+      const b = pickOther([a]);
+      s = shuffle([a, a, b, b]);
+    } else if (roll <= CHANCE.x1) {
+
+      const a = rand();
+      const b = pickOther([a]);
+      const c = pickOther([a, b]);
+      s = shuffle([a, a, b, c]);
     } else {
-      s = Array.from({ length: 4 }, () =>
-        items[Math.floor(Math.random() * items.length)]
-      );
+
+      const pool = shuffle([...items]);
+      s = pool.slice(0, 4);
     }
+
+    const counts = {};
+    s.forEach((i) => (counts[i] = (counts[i] || 0) + 1));
+    const sorted = Object.values(counts).sort((a, b) => b - a);
+
+    let multiplier = 0;
+    if (sorted[0] === 4) multiplier = 4;
+    else if (sorted[0] === 3) multiplier = 3;
+    else if (sorted[0] === 2 && sorted[1] === 2) multiplier = 2;
+    else if (sorted[0] === 2) multiplier = 1;
+
+    const win = multiplier > 0;
 
     global.slotLimit[senderID].count++;
 
-    const sent = await message.reply(
-      `🎰 | SLOT MACHINE\n──────────────\n [ ❓ | ❓ | ❓ | ❓ ]\n──────────────\n⌛ Spinning...`
-    );
+    const line = "──────────────";
+    const frame = (a, b, c, d, footer) =>
+      `🎰 | SLOT MACHINE | 🎰\n${line}\n [ ${a} | ${b} | ${c} | ${d} ]\n${line}\n${footer}`;
 
-    await new Promise(r => setTimeout(r, 1000));
+    const sent = await message.reply(frame("❓", "❓", "❓", "❓", "⌛ Spinning..."));
 
-    await api.editMessage(
-      `🎰 | SLOT MACHINE\n──────────────\n [ ${s[0]} | ${s[1]} | ❓ | ❓ ]\n──────────────\n⌛ Spinning...`,
-      sent.messageID
-    );
+    await new Promise((r) => setTimeout(r, 1000));
+    await api.editMessage(frame(s[0], s[1], "❓", "❓", "⌛ Spinning..."), sent.messageID);
 
-    await new Promise(r => setTimeout(r, 1000));
+    await new Promise((r) => setTimeout(r, 1000));
+    await api.editMessage(frame(s[0], s[1], s[2], "❓", "⌛ Spinning..."), sent.messageID);
 
-    const counts = {};
-    s.forEach(i => counts[i] = (counts[i] || 0) + 1);
-    const maxMatch = Math.max(...Object.values(counts));
-
-    const win = maxMatch >= 2;
-
-    let multiplier = 0;
-    if (maxMatch === 4) multiplier = 4;
-    else if (maxMatch === 3) multiplier = 2;
-    else if (maxMatch === 2) multiplier = 1;
+    await new Promise((r) => setTimeout(r, 800));
 
     const bonus = win ? betAmount * multiplier : 0;
     const finalMoney = win ? currentMoney + bonus : currentMoney - betAmount;
@@ -125,8 +145,12 @@ module.exports = {
     await usersData.set(senderID, userData);
 
     const status = win ? `WIN ${multiplier}x 🎉` : "LOSE ❤️‍🩹";
-    const resultMessage = `🎰 | SLOT MACHINE\n──────────────\n [ ${s.join(" | ")} ]\n──────────────\n🎉 ${status}\n💰 ${win ? "Won: " + formatMoney(bonus) : "Lost: " + formatMoney(betAmount)}$\n💳 Balance: ${formatMoney(finalMoney)}$\n📜 Usage: ${global.slotLimit[senderID].count}/${maxSpins}`;
+    const footer =
+      `🎉 ${status}\n` +
+      `💰 ${win ? "Won: " + formatMoney(bonus) : "Lost: " + formatMoney(betAmount)}$\n` +
+      `👛 Balance: ${formatMoney(finalMoney)}$\n` +
+      `📜 Usage: ${global.slotLimit[senderID].count}/${MAX_SPINS}`;
 
-    await api.editMessage(resultMessage, sent.messageID);
+    await api.editMessage(frame(s[0], s[1], s[2], s[3], footer), sent.messageID);
   }
 };
