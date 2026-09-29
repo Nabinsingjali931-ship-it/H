@@ -1,348 +1,363 @@
+<img src="https://i.ibb.co/RQ28H2p/banner.png" alt="banner">
+<h1 align="center"><img src="./dashboard/images/logo-non-bg.png" width="22px"> Goat Bot V2 — Enhanced Edition</h1>
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=slice&color=gradient&height=300&section=header&text=SATURO%20BOT%20V2&fontSize=100&fontColor=ffffff&animation=twinkling&fontAlignY=40&desc=⚡%20The%20Ultimate%20Facebook%20Messenger%20Bot%20⚡&descSize=24&descAlignY=65&descColor=FFD700&customColorList=0,1,2,3,4,5,6,7,8,9" width="100%"/>
-</div>
+<p align="center">
+	<em>A feature-rich Facebook Messenger bot framework with a web dashboard, built on an unofficial Messenger API.</em>
+</p>
 
-<br/>
+<p align="center">
+	<a href="https://nodejs.org/dist/v22.0.0">
+		<img src="https://img.shields.io/badge/Node.js-22.x-brightgreen.svg?style=flat-square" alt="Node.js 22.x">
+	</a>
+	<img alt="code-version" src="https://img.shields.io/badge/dynamic/json?color=brightgreen&label=version&prefix=v&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fntkhang03%2FGoat-Bot-V2%2Fmain%2Fpackage.json&style=flat-square">
+	<img alt="license" src="https://img.shields.io/badge/license-MIT-green?style=flat-square">
+	<img alt="platform" src="https://img.shields.io/badge/platform-Node.js%20%7C%20Docker-informational?style=flat-square">
+</p>
 
-<div align="center">
-  <img src="https://i.imgur.com/eQ13LWa.jpeg" width="75%" style="border-radius:50px 20px 50px 20px; border: 6px solid; border-image: linear-gradient(135deg, #ff6b6b, #ffd93d, #6bcb77, #4d96ff, #a29bfe, #fd79a8) 1; box-shadow: 0 0 120px rgba(255,107,107,0.6), 0 0 240px rgba(255,217,61,0.4), 0 0 360px rgba(107,203,119,0.2);"/>
-</div>
-
-<br/>
-
-<div align="center">
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=34&duration=3500&pause=1000&color=A855F7&center=true&vCenter=true&width=750&lines=🚀+200%2B+Commands+Ready;⚡+Lightning+Fast+Performance;🛡️+Advanced+Anti-Suspension;🎛️+Powerful+Web+Dashboard;💫+Maintained+by+ANIK+ISLAM+SADIK)](https://git.io/typing-svg)
-
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=2000&pause=1000&color=FF6B6B&center=true&vCenter=true&width=700&lines=✦+Next-Gen+Bot+Technology+✦;✦+Enterprise+Grade+Security+✦;✦+24/7+Uptime+Guaranteed+✦;✦+Premium+Quality+Service+✦;✦+100%+Safe+%26+Secure+✦" alt="Typing SVG" />
-</div>
-
-<br/>
-
-<div align="center">
-
-[![Stars](https://img.shields.io/badge/🌟_Stars-FF6B6B?style=for-the-badge&logo=starship&logoColor=white&labelColor=1a1a2e)](https://github.com/lazyanik/SATURO-BOT-V2/stargazers)
-[![Forks](https://img.shields.io/badge/🍴_Forks-4D96FF?style=for-the-badge&logo=git&logoColor=white&labelColor=1a1a2e)](https://github.com/lazyanik/SATURO-BOT-V2/forks)
-[![Size](https://img.shields.io/badge/📦_Size-6BCB77?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a2e)](https://github.com/lazyanik/SATURO-BOT-V2)
-[![Commit](https://img.shields.io/badge/🔄_Updated-FFD93D?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a2e)](https://github.com/lazyanik/SATURO-BOT-V2/commits)
-[![License](https://img.shields.io/badge/📜_License-FF6B6B?style=for-the-badge&logo=opensourceinitiative&logoColor=white&labelColor=1a1a2e)](https://github.com/lazyanik/SATURO-BOT-V2/blob/main/LICENSE)
-
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://img.shields.io/badge/Node.js->=20.x-339933?style=for-the-badge&logo=nodedotjs&logoColor=white&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/Facebook_Messenger-1877F2?style=for-the-badge&logo=messenger&logoColor=white&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/Status-🟢_Online-6BCB77?style=for-the-badge&logo=statuspage&logoColor=white&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/Version-2.0-FFD93D?style=for-the-badge&logo=vercel&logoColor=white&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/Made%20with-❤️-FF6B6B?style=for-the-badge&logo=love&logoColor=white&labelColor=1a1a2e"/>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=lazyanik&style=for-the-badge&color=FF6B6B&label=👁️+VIEWS&labelColor=1a1a2e"/>
-  <img src="https://img.shields.io/badge/dynamic/json?label=⭐%20Total%20Stars&query=%24.stars&url=https%3A%2F%2Fapi.github-star-counter.workers.dev%2Fuser%2Flazyanik&style=for-the-badge&color=FFD93D&labelColor=1a1a2e"/>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=aLpha-x69&repo=SATURO-BOT-V2&theme=tokyonight&hide_border=true&border_radius=15&title_color=FF6B6B&icon_color=FFD93D&text_color=6BCB77&bg_color=0d0d0d" width="49%"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aLpha-x69&theme=tokyonight&hide_border=true&border_radius=15&title_color=4D96FF&text_color=FFD93D&bg_color=0d0d0d&layout=compact" width="49%"/>
-</div>
-
-<br/>
+<p align="center">
+	<sub>
+		Maintained fork of <a href="https://github.com/ntkhang03/Goat-Bot-V2">Goat-Bot-V2</a> by <b>NTKhang</b>.<br>
+		<b>Modified and enhanced by <a href="https://github.com/lazyneoaz">Neoaz</a> (<a href="https://github.com/lazyneoaz">@lazyneoaz</a>) 🐊</b>
+	</sub>
+</p>
 
 ---
 
-## 🌟 Features
+## 📖 **Overview**
 
-<div align="center">
+**Goat Bot V2 — Enhanced Edition** is a self-hosted Messenger chat-bot framework. It connects through an unofficial Messenger API, exposes a full command/event system, and ships with a MongoDB/SQLite-backed dashboard for managing threads, users and runtime configuration.
 
-| 🛡️ **Anti-Suspension** | ⚡ **Fast MQTT** | 🎛️ **Web Dashboard** |
-|:-----------------------:|:----------------:|:---------------------:|
-| Human-behavior simulation to avoid Facebook bans | Optimized connection with auto-restart & keep-alive | Manage bot, users & groups from your browser |
+This fork focuses on **production readiness**: a modern dependency stack, a hardened login flow, safer database handling, and a set of new quality-of-life features.
 
-| 🌐 **Multi-Account** | 💾 **Dual Database** | 🔄 **Auto Token Refresh** |
-|:--------------------:|:--------------------:|:--------------------------:|
-| Run multiple Facebook accounts simultaneously | MongoDB + SQLite for reliable data storage | Cookies & tokens auto-refreshed to prevent expiry |
-
-| 🎵 **Music & Media** | 🤖 **AI Commands** | 🏆 **Economy System** |
-|:--------------------:|:------------------:|:----------------------:|
-| Download from YouTube, TikTok, Spotify in chat | DeepAI, DeepSeek, Midjourney integrations | Daily rewards, bank, casino, rank cards |
-
-| 🔒 **Permission System** | 📦 **200+ Commands** | 🎨 **Customizable** |
-|:------------------------:|:--------------------:|:--------------------:|
-| 5-level role-based access control | Extensive command library | Fully customizable bot experience |
-
-</div>
-
----
-
-## 🔐 Permission Levels & Role Priority
-
-<div align="center">
-
-**Role Priority System:** Developer (4) > Bot Admin (2) > Premium (3) > Group Admin (1) > Normal (0)
-
-⚠️ **Note:** Bot Admin (2) has higher priority than Premium (3)
-
-| Level | Role | Priority | Badge | Access |
-|:-----:|:----:|:--------:|:-----:|:------:|
-| 0 | 👤 Normal User | Lowest | `░░░░░░` | Basic Commands |
-| 1 | ⚔️ Group Admin | Low | `██░░░░` | Moderate Control |
-| 3 | 💎 Premium User | Medium | `████░░` | Premium Access |
-| 2 | 👑 Bot Admin | High | `█████░` | Full Control |
-| 4 | 🔧 Developer | **Highest** | `██████` | **Developer Access** |
-
-</div>
-
-### Permission Priority Rules:
-
-```
-
-Priority: Developer (4) > Bot Admin (2) > Premium (3) > Group Admin (1) > Normal (0)
-
-Rules:
-
-1. ✅ Developer (4) always gets highest priority
-2. ✅ Bot Admin (2) gets priority over Premium (3) and below
-3. ✅ Premium (3) users retain their role even if they are Group Admin
-4. ✅ Group Admin (1) role applies only if user has no higher role
-5. ✅ Normal (0) users have the lowest priority
-6. ✅ Admin and Dev always get their role regardless of premium membership
-
-```
+> **Table of contents**
+> - [✨ Enhanced features in this fork](#-enhanced-features-in-this-fork)
+> - [🚧 Requirements](#-requirements)
+> - [📦 Installation](#-installation)
+> - [⚙️ Configuration](#️-configuration)
+> - [🚀 Running the bot](#-running-the-bot)
+> - [💡 How it works](#-how-it-works)
+> - [🛠️ Creating new commands](#️-creating-new-commands)
+> - [🌐 Supported languages](#-supported-languages)
+> - [📌 Common problems](#-common-problems)
+> - [❌ Do not use unofficial copies](#-do-not-use-unofficial-copies)
+> - [📸 Screenshots](#-screenshots)
+> - [👥 Credits](#-credits)
+> - [📜 License](#-license)
 
 ---
 
-## 📦 Command Categories
+## ✨ **Enhanced features in this fork**
 
-<div align="center">
+### New bot behaviours
+- **Powered by `xtreme-fca`** — the API layer is [`xtreme-fca`](https://www.npmjs.com/package/xtreme-fca) by [@lazyneoaz](https://github.com/lazyneoaz), a hardened fork of the unofficial Messenger API with built-in auto-reconnect and MQTT recovery.
+- **Music search** — looks up a song by title or artist through the Messenger music catalog and sends the track into the chat, using `searchMusic` from the API layer.
+- **Reaction unsend** — react with a configured emoji (default 😡 / 😠) to delete the bot's own message. Admin-gated by default.
+- **Reaction mirror** — the bot mirrors any (or a configured set of) emoji that an admin reacts to on another user's message.
+- **Command suggestions** — a typo such as `-holp` returns *“Did you mean `-help`?”* using transposition-aware fuzzy matching.
+- **NoPrefix mode** — optionally let commands run without the prefix (`help` == `-help`), with an ignore list and admin-only mode.
+- **User-agent pool** — 11 user agents shipped in config; `randomUserAgent` picks one per login to reduce detection.
 
-| 🎵 **Music & Media** | 🤖 **AI & Smart** | 👮 **Admin Tools** |
-|:--------------------:|:------------------:|:-------------------:|
-| `sing` `yt` `tiktok` `alldl` `album` `spotify` | `deepseek` `deepai` `midjourney` `prompt` `gpt` | `ban` `kick` `admin` `setrole` `setwelcome` `mute` |
-
-| 💰 **Economy** | 🎮 **Fun & Games** | 📊 **Info & Stats** |
-|:--------------:|:------------------:|:--------------------:|
-| `daily` `bank` `casino` `balance` `slot` `bet` | `quiz` `wordgame` `pair` `slap` `maze` `roulette` | `uid` `boxinfo` `gcinfo` `pfp` `rank` `server` |
-
-| ⚙️ **Utility** | 🎨 **Image & Art** |
-|:--------------:|:-------------------:|
-| `eval` `shell` `restart` `update` `help` `ping` | `4k` `rbg` `font` `animate` `customrankcard` `avatar` |
-
-</div>
-
----
-
-## ⚙️ Command Template
-
-```js
-module.exports = {
-  config: {
-    name: "commandName",
-    version: "2.0",
-    author: "ANIK ISLAM SADIK",
-    role: 0,  // 0=Normal 1=GroupAdmin 3=Premium 2=BotAdmin 4=Developer
-    usePrefix: true,
-    description: "Command description here",
-    guide: "{pn} [args]",
-    category: "Utility",
-    cooldowns: 3,
-    hasPermission: async ({ api, event }) => {
-      // Permission check logic
-    }
-  },
-  onStart: async function ({ api, event, args, message }) {
-    try {
-      // Command logic here
-    } catch (error) {
-      console.error(error);
-      message.reply("❌ An error occurred while executing this command.");
-    }
-  },
-  onChat: async function ({ api, event, message }) {
-    // Optional: Chat event handler
-  }
-};
-```
+### Modernised foundation
+- Uses the [`xtreme-fca`](https://www.npmjs.com/package/xtreme-fca) API layer ([source](https://github.com/lazyneoaz/xtreme-fca)).
+- Updated dependencies to current stable releases; removed unused packages.
+- Uses the native [`canvas`](https://www.npmjs.com/package/canvas) package (v3) for image rendering.
+- Hardened the login flow: non-fatal cookie liveness pre-check, optional Google credentials, and `.dev.*` files used only when `NODE_ENV=development`.
+- Reliable SQLite path override via `GOAT_DB_PATH`, with busy-timeout to avoid lock errors on network filesystems.
+- `npm start` / `npm run dev` / `npm run prod` scripts and a `postinstall` rebuild for native modules.
 
 ---
 
-📊 Project Status
+## 🚧 **Requirements**
 
-<div align="center">
-
-Module Progress Status
-💻 Core Code ██████████ 98% ✅ Complete
-🧪 Testing ████████░░ 85% 🔄 Active
-📄 Documentation █████████░ 92% ✅ Complete
-⚡ Performance ██████████ 99% ✅ Optimized
-🔒 Security ██████████ 95% ✅ Secure
-🟢 Uptime ██████████ 99.9% ✅ Live
-
-</div>
+- **Node.js** 22.x ([download](https://nodejs.org/en/download/releases/))
+- **Git**
+- Optional: **MongoDB** (otherwise the bot uses SQLite)
+- Basic familiarity with JavaScript / Node.js and the [unofficial Messenger API](https://github.com/ntkhang03/fb-chat-api/blob/master/DOCS.md)
 
 ---
 
-📈 Repository Statistics
-
-<div align="center">
-
-Metric Value
-⭐ Stars https://img.shields.io/github/stars/lazyanik/SATURO-BOT-V2?style=flat-square&color=FF6B6B
-🍴 Forks https://img.shields.io/github/forks/lazyanik/SATURO-BOT-V2?style=flat-square&color=4D96FF
-📦 Size https://img.shields.io/github/repo-size/lazyanik/SATURO-BOT-V2?style=flat-square&color=6BCB77
-📅 Last Commit https://img.shields.io/github/last-commit/lazyanik/SATURO-BOT-V2?style=flat-square&color=FFD93D
-🐛 Issues https://img.shields.io/github/issues/lazyanik/SATURO-BOT-V2?style=flat-square&color=FF6B6B
-🔀 PRs https://img.shields.io/github/issues-pr/lazyanik/SATURO-BOT-V2?style=flat-square&color=6BCB77
-
-</div>
-
----
-
-🚀 Quick Start
+## 📦 **Installation**
 
 ```bash
-# Clone the repository
-git clone https://github.com/lazyanik/SATURO-BOT-V2.git
+# 1. Clone the repository
+git clone https://github.com/lazyneoaz/Goat-Bot-V2.git
+cd Goat-Bot-V2
 
-# Navigate to project directory
-cd SATURO-BOT-V2
-
-# Install dependencies
+# 2. Install dependencies
 npm install
 
-# Configure environment
-cp .env.example .env
-
-# Start the bot
+# 3. Start the bot
 npm start
 ```
 
----
+On first run the bot prompts for an account. You can supply one of the following in `account.txt`:
+- a cookie string / Netscape cookie file,
+- a JSON app-state / cookie array,
+- an `EAAAA…` access token,
+- or an `email`, `password` pair (in `config.json`) for password login.
 
-📶 Connect & Support
-
-<div align="center">
-
-<a href="https://www.facebook.com/profile.php?id=61590594545013">
-  <img src="https://img.shields.io/badge/👤_ANIK_ISLAM_SADIK-1877F2?style=for-the-badge&logo=facebook&logoColor=white&labelColor=1a1a2e"/>
-</a>
-<a href="https://www.facebook.com/profile.php?id=61590594545013">
-  <img src="https://img.shields.io/badge/📱_Facebook_Profile-1877F2?style=for-the-badge&logo=facebook&logoColor=white&labelColor=1a1a2e"/>
-</a>
-<a href="https://wa.me/8801886986619">
-  <img src="https://img.shields.io/badge/📱_WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=1a1a2e"/>
-</a>
-<a href="https://github.com/aLpha-x69/SATURO-BOT-V2/issues">
-  <img src="https://img.shields.io/badge/🐛_Report_Bug-FF6B6B?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a2e"/>
-</a>
-<a href="https://github.com/aLpha-x69/SATURO-BOT-V2/discussions">
-  <img src="https://img.shields.io/badge/💬_Discussions-4D96FF?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1a2e"/>
-</a>
-<a href="https://www.facebook.com/profile.php?id=61590594545013">
-  <img src="https://img.shields.io/badge/💬_Messenger-00B2FF?style=for-the-badge&logo=messenger&logoColor=white&labelColor=1a1a2e"/>
-</a>
-
-</div>
+A step-by-step guide is available in [`STEP_INSTALL.md`](./STEP_INSTALL.md).
 
 ---
 
-🗃️ Credits
+## ⚙️ **Configuration**
 
-<div align="center">
+All settings live in **`config.json`** at the project root. Commonly edited keys:
 
-Role Name Contribution
-🏆 Original Creator NTKhang03 Goat-Bot-V2 Base
-👑 Modifier & Maintainer ANIK ISLAM SADIK Core Modifications, Enhancements & Active Development
+| Key | Purpose |
+| --- | --- |
+| `prefix` | Command prefix (default `-`). |
+| `language` | Bot language (`en` or `vi`). |
+| `nickNameBot` | Display name used in some replies. |
+| `adminBot` | Array of bot-admin user IDs (`role 2`). |
+| `dashBoard` | Enable/disable the web dashboard, set its port, and (optionally) `sessionSecret`. |
+| `dashBoard.sessionSecret` | Optional fixed secret for dashboard login sessions. Set a long random string to keep logins valid across restarts; leave empty to auto-generate per start. |
+| `serverUptime.socket.verifyToken` | Password clients send to connect to the socket.io uptime server. Set a long random string; when empty a temporary token is generated at startup. |
+| `commandSuggestion` | `{ enable: true }` — suggest the closest command on typos. |
+| `noPrefix` | `{ enable, onlyAdminBot, ignoreCommands }` — prefix-free commands. |
+| `reactUnsend` | `{ enable, emojis, onlyAdmin }` — delete bot messages via reaction. |
+| `reactMirror` | `{ enable, mirrorAllEmojis, emojis, onlyAdmin }` — mirror reactions. |
+| `facebookAccount.userAgents` | Pool of user agents. |
+| `optionsFca.randomUserAgent` | Pick a random user agent per login. |
+| `optionsFca.autoReconnect` | Reconnect MQTT automatically when the connection drops. Keep `true`. |
 
-</div>
-
----
-
-💖 Support
-
-<div align="center">
-
-If you find this project helpful, please consider:
-
-⭐ Starring this repository
-🍴 Forking for your own use
-💬 Sharing with friends
-🐛 Reporting issues you find
-
-</div>
+New keys are merged with safe defaults on startup, so upgrading an old `config.json` will not break the bot.
 
 ---
 
-📜 License
+## 🚀 **Running the bot**
 
-```
-╔══════════════════════════════════════════════════════════════╗
-║                    SATURO BOT V2                            ║
-║                 MIT License (No Derivatives)                ║
-║                                                             ║
-║  Copyright (c) 2022 NTKhang03                              ║
-║  Modified & Maintained by ANIK ISLAM SADIK                 ║
-║                                                             ║
-║  ✔ You may use and share this software freely              ║
-║  ✘ You may NOT modify or create derivative works           ║
-║  ✘ You may NOT sell this source code or claim it as your   ║
-║                                                             ║
-╚══════════════════════════════════════════════════════════════╝
+```bash
+npm start          # production-style run
+npm run dev        # development run (uses .dev.* files)
+npm run prod       # explicit production run
 ```
 
----
+Environment variables:
 
-🎯 Top Contributors
+| Variable | Effect |
+| --- | --- |
+| `NODE_ENV` | `development` enables the `.dev.*` config files. |
+| `GOAT_DB_PATH` | Overrides the SQLite database path (useful on network filesystems). |
 
-<div align="center">
+When `dashBoard.enable` is `true`, the web dashboard is served on the configured port (default `3001`).
 
-<a href="https://github.com/lazyanik9/SATURO-BOT-V2/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=lazyanik/SATURO-BOT-V2" />
-</a>
-
-</div>
-
----
-
-🔥 Featured Commands
-
-<div align="center">
-
-Command Description Example
-sing Download music from YouTube sing Imagine Dragons
-deepseek AI-powered responses deepseek Who are you?
-daily Collect daily rewards daily
-ban Ban a member from group ban @user reason
-slot Play slot machine slot 100
-rank Show user rank card rank @user
-
-</div>
+Dashboard login sessions are stored on disk under `database/data/sessions/` (a lightweight file-backed store), so the process no longer uses the in-memory session store that leaks memory and logs a production warning. Session files respect the 7-day cookie lifetime and are cleaned up automatically.
 
 ---
 
-<div align="center">
+## 💡 **How it works**
 
-<img src="https://capsule-render.vercel.app/api?type=slice&color=gradient&height=200&section=footer&animation=fadeIn&customColorList=0,1,2,3,4,5,6,7,8,9" width="100%"/>
+The bot uses the unofficial Messenger API to send and receive messages. On every new event (message, reaction, join/leave, admin change, …) an event is dispatched to `handlerEvents`, which resolves the command and runs it.
 
-<br/>
+- **`onStart`** — a user invoked a command:
+  - check whether a command was actually called (prefix or no-prefix mode),
+  - check bans / admin-only mode,
+  - check the user's permission role,
+  - check the command cooldown,
+  - execute and log.
 
-⭐ If you like this project, don't forget to star it! ⭐
+- **`onChat`** — runs on any message; executes a returned `function`/`async function` after the same ban/permission checks.
 
-<br/>
+- **`onFirstChat`** — runs the first time a thread is seen since startup, otherwise behaves like `onChat`.
 
-<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%"/>
+- **`onReaction`** — runs when a user reacts to a message registered in `GoatBot.onReaction`:
+	```javascript
+	global.GoatBot.onReaction.set(msg.messageID, {
+		messageID: msg.messageID,
+		commandName,
+		// ...
+	});
+	```
+  A `delete` method is added automatically to remove the entry.
 
-</div>
+- **`onReply`** — runs when a user replies to a message registered in `GoatBot.onReply` (same pattern as `onReaction`).
+
+- **`onEvent`** — runs for system events (join, leave, admin change, …) registered in `GoatBot.onEvent`.
+
+- **`handlerEvent`** — runs event commands placed in `scripts/events/`, looping over every registered `eventCommands` entry.
+
+---
+
+## 🛠️ **Creating new commands**
+
+Commands live in `scripts/cmds/` and are loaded automatically. A minimal command:
+
+```javascript
+module.exports = {
+	config: {
+		name: "hello",
+		version: "1.0",
+		author: "Your Name",
+		countDown: 5,
+		role: 0,
+		description: { en: "say hello" },
+		category: "fun",
+		guide: { en: "{pn} <name>" }
+	},
+	langs: {
+		en: { reply: "Hello, %1!" }
+	},
+	onStart: async function ({ args, message, getLang }) {
+		return message.reply(getLang("reply", args[0] || "world"));
+	}
+};
+```
+
+- `category` is required; `author` should be kept accurate.
+- Use `role: 0` (everyone), `1` (group admins) or `2` (bot admins).
+- Add localised strings under `langs`.
+- Full reference: [`DOCS.md`](./DOCS.md).
+
+---
+
+## 🌐 **Supported languages**
+
+- [x] `en` — English
+- [x] `vi` — Vietnamese
+
+Set the language in `config.json`, and customise strings under `languages/`, `languages/cmds/` and `languages/events/`.
+
+---
+
+## 📌 **Common problems**
+
+<details>
+	<summary>📌 Error 400: redirect_uri_mismatch</summary>
+	<p><img src="https://i.ibb.co/6Fbjd4r/image.png" width="250px"></p>
+	<p>1. Enable the Google Drive API: <a href="https://youtu.be/nTIT8OQeRnY?t=347">Tutorial</a></p>
+	<p>2. Add <a href="https://developers.google.com/oauthplayground">https://developers.google.com/oauthplayground</a> (no trailing slash) to <b>Authorized redirect URIs</b> in the <b>OAuth consent screen</b>: <a href="https://youtu.be/nTIT8OQeRnY?t=491">Tutorial</a></p>
+	<p>3. Choose <b>https://www.googleapis.com/auth/drive</b> and <b>https://mail.google.com/</b> in the <b>OAuth 2.0 Playground</b>: <a href="https://youtu.be/nTIT8OQeRnY?t=600">Tutorial</a></p>
+</details>
+
+<details>
+	<summary>📌 Error for site owners: Invalid domain for site key</summary>
+	<p><img src="https://i.ibb.co/2gZttY7/image.png" width="250px"></p>
+	<p>1. Go to <a href="https://www.google.com/recaptcha/admin">https://www.google.com/recaptcha/admin</a></p>
+	<p>2. Add the domain <b>repl.co</b> (not <b>repl.com</b>) to <b>Domains</b> in <b>reCAPTCHA v2</b>: <a href="https://youtu.be/nTIT8OQeRnY?t=698">Tutorial</a></p>
+</details>
+
+<details>
+	<summary>📌 GaxiosError: invalid_grant, unauthorized_client</summary>
+	<p><img src="https://i.ibb.co/n7w9TkH/image.png" width="250px"></p>
+	<p><img src="https://i.ibb.co/XFKKY9c/image.png" width="250px"></p>
+	<p><img src="https://i.ibb.co/f4mc5Dp/image.png" width="250px"></p>
+	<p>- If the project is not published in the Google console, the refresh token expires after one week and must be regenerated: <a href="https://youtu.be/nTIT8OQeRnY?t=445">Tutorial</a></p>
+</details>
+
+<details>
+	<summary>📌 GaxiosError: invalid_client</summary>
+	<p><img src="https://i.ibb.co/st3W6v4/Pics-Art-01-01-09-10-49.jpg" width="250px"></p>
+	<p>- Check that the Google project <code>client_id</code> was entered correctly: <a href="https://youtu.be/nTIT8OQeRnY?t=509">Tutorial</a></p>
+</details>
+
+<details>
+	<summary>📌 Error 403: access_denied</summary>
+	<p><img src="https://i.ibb.co/dtrw5x3/image.png" width="250px"></p>
+	<p>- If the project is not published in the Google console, only approved accounts added to the project can use it: <a href="https://youtu.be/nTIT8OQeRnY?t=438">Tutorial</a></p>
+</details>
+
+---
+
+## ❌ **Do not use unofficial copies**
+
+- Using unknown source code can expose your device and accounts to malware.
+- The upstream project is published only at <https://github.com/ntkhang03/Goat-Bot-V2>; this enhanced fork lives at <https://github.com/lazyneoaz/Goat-Bot-V2>.
+- Copies hosted elsewhere, or re-uploads that remove author credits, are unsupported and violate the license.
+
+---
+
+## 📸 **Screenshots**
+
+### Bot
+
+<details>
+	<summary>Rank system</summary>
+	<p><img src="https://i.ibb.co/d0JDJxF/rank.png" width="399px"></p>
+	<p><img src="https://i.ibb.co/WgZzthH/rankup.png" width="399px"></p>
+	<p><img src="https://i.ibb.co/hLTThLW/customrankcard.png" width="399px"></p>
+</details>
+
+<details>
+	<summary>Weather</summary>
+	<p><img src="https://i.ibb.co/2FwWVLv/weather.png" width="399px"></p>
+</details>
+
+<details>
+	<summary>Join / leave notifications</summary>
+	<p><img src="https://i.ibb.co/Jsb5Jxf/wcgb.png" width="399px"></p>
+</details>
+
+<details>
+	<summary>Openjourney</summary>
+	<p><img src="https://i.ibb.co/XJfwj1X/Screenshot-2023-05-09-22-43-58-630-com-facebook-orca.jpg" width="399px"></p>
+</details>
+
+<details>
+	<summary>GPT</summary>
+	<p><img src="https://i.ibb.co/D4wRbM3/Screenshot-2023-05-09-22-47-48-037-com-facebook-orca.jpg" width="399px"></p>
+	<p><img src="https://i.ibb.co/z8HqPkH/Screenshot-2023-05-09-22-47-53-737-com-facebook-orca.jpg" width="399px"></p>
+	<p><img src="https://i.ibb.co/19mZQpR/Screenshot-2023-05-09-22-48-02-516-com-facebook-orca.jpg" width="399px"></p>
+</details>
+
+### Dashboard
+
+<details>
+	<summary>Home</summary>
+	<p><img src="https://i.postimg.cc/GtwP4Cqm/Screenshot-2023-12-23-105357.png" width="399px"></p>
+	<p><img src="https://i.postimg.cc/MTjbZT0L/Screenshot-2023-12-23-105554.png" width="399px"></p>
+</details>
+
+<details>
+	<summary>Stats</summary>
+	<p><img src="https://i.postimg.cc/QtXt98B7/image.png" width="399px"></p>
+</details>
+
+<details>
+	<summary>Login / Register</summary>
+	<p><img src="https://i.postimg.cc/Jh05gKsM/Screenshot-2023-12-23-105743.png" width="399px"></p>
+	<p><img src="https://i.postimg.cc/j5nM9K8m/Screenshot-2023-12-23-105748.png" width="399px"></p>
+</details>
+
+<details>
+	<summary>Thread management</summary>
+	<p><img src="https://i.postimg.cc/RF237v1Z/Screenshot-2023-12-23-105913.png" width="399px"></p>
+</details>
+
+<details>
+	<summary>Custom on/off</summary>
+	<p><img src="https://i.ibb.co/McDRhmX/image.png" width="399px"></p>
+</details>
+
+<details>
+	<summary>Custom welcome / leave messages</summary>
+	<p><img src="https://i.ibb.co/6ZrQqc1/image.png" width="399px"></p>
+	<p><img src="https://i.ibb.co/G53JsXm/image.png" width="399px"></p>
+</details>
+
+---
+
+## 👥 **Credits**
+
+- **Original author:** [NTKhang (ntkhang03)](https://github.com/ntkhang03) — creator of [Goat-Bot-V2](https://github.com/ntkhang03/Goat-Bot-V2).
+- **Modified and enhanced by:** [Neoaz (@lazyneoaz)](https://github.com/lazyneoaz) 🐊 — modernised dependency stack, hardened login, and new features.
+- **Messenger API layer:** [`xtreme-fca`](https://www.npmjs.com/package/xtreme-fca) by [@lazyneoaz](https://github.com/lazyneoaz) ([source](https://github.com/lazyneoaz/xtreme-fca)).
+- **Bot name:** `Neoaz 🐊`.
+
+## 📜 **License**
+
+**VIETNAMESE**
+
+- ***Nếu bạn vi phạm bất kỳ quy tắc nào, bạn sẽ bị cấm sử dụng dự án của tôi***
+- Không bán mã nguồn của tôi
+- Không tự xưng là chủ sở hữu của mã nguồn của tôi
+- Không kiếm tiền từ mã nguồn của tôi (chẳng hạn như: mua bán lệnh, mua bán/cho thuê bot, kêu gọi quyên góp, v.v.)
+- Không xóa/sửa đổi credit (tên tác giả) trong mã nguồn của tôi
+
+**ENGLISH**
+
+- ***If you violate any rules, you will be banned from using my project***
+- Don't sell my source code
+- Don't claim my source code as your own
+- Do not monetize my source code (such as: buy and sell commands, buy and sell bots, call for donations, etc.)
+- Don't remove/edit my credits (author name) in my source code
