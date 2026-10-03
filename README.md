@@ -1,408 +1,451 @@
-<img src="https://i.ibb.co/RQ28H2p/banner.png" alt="banner">  
-<h1 align="center"><img src="./dashboard/images/logo-non-bg.png" width="22px"> Goat Bot V2 — Enhanced Edition</h1><p align="center">
-	<em>A feature-rich Facebook Messenger bot framework with a web dashboard, built on an unofficial Messenger API.</em>
-</p><p align="center">
-	<a href="https://nodejs.org/dist/v22.0.0">
-		<img src="https://img.shields.io/badge/Node.js-22.x-brightgreen.svg?style=flat-square" alt="Node.js 22.x">
-	</a>
-	<img alt="code-version" src="https://img.shields.io/badge/dynamic/json?color=brightgreen&label=version&prefix=v&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Fntkhang03%2FGoat-Bot-V2%2Fmain%2Fpackage.json&style=flat-square">
-	<img alt="license" src="https://img.shields.io/badge/license-MIT-green?style=flat-square">
-	<img alt="platform" src="https://img.shields.io/badge/platform-Node.js%20%7C%20Docker-informational?style=flat-square">
-</p><p align="center">
-	<sub>
-		Maintained fork of <a href="https://github.com/ntkhang03/Goat-Bot-V2">Goat-Bot-V2</a> by <b>NTKhang</b>.<br>
-		<b>Modified and enhanced by <a href="https://github.com/lazyanik">Anik Islam Sadik</a> (<a href="https://github.com/lazyanik">@lazyanik</a>) 🕊️</b>
-	</sub>
-</p>---
+<div align="center"><img src="https://i.ibb.co/RQ28H2p/banner.png" alt="SATURO BOT V2 Banner"><h1>
+  <img src="./dashboard/images/logo-non-bg.png" width="24px">
+  SATURO BOT V2 — Enhanced Edition
+</h1><p>
+  <em>A feature-rich Facebook Messenger bot framework with a web dashboard, built on an unofficial Messenger API.</em>
+</p><p>
+  <img src="https://img.shields.io/badge/Node.js-22.x-brightgreen.svg?style=flat-square" alt="Node.js 22.x">
+  <img alt="version" src="https://img.shields.io/badge/dynamic/json?color=brightgreen&label=version&prefix=v&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Flazyanik%2FSATURO-BOT-V2%2Fmain%2Fpackage.json&style=flat-square">
+  <img alt="license" src="https://img.shields.io/badge/license-MIT-green?style=flat-square">
+  <img alt="platform" src="https://img.shields.io/badge/platform-Node.js%20%7C%20Docker-informational?style=flat-square">
+</p><p>
+  <sub>
+    Maintained fork of
+    <a href="https://github.com/ntkhang03/Goat-Bot-V2">Goat-Bot-V2</a>
+    by <b>NTKhang</b>.
+    <br>
+    <b>Modified & enhanced by
+    <a href="https://github.com/lazyanik">Anik Islam Sadik</a>
+    (@lazyanik) 🕊️</b>
+  </sub>
+</p><p>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=auto" width="70%">
+</p></div>📖 Overview
 
-📖 Overview
+SATURO BOT V2 — Enhanced Edition is a self-hosted Messenger chat-bot framework built around the Goat-Bot-V2 architecture.
 
-Goat Bot V2 — Enhanced Edition is a self-hosted Messenger chat-bot framework. It connects through an unofficial Messenger API, exposes a full command/event system, and ships with a MongoDB/SQLite-backed dashboard for managing threads, users and runtime configuration.
+It connects through an unofficial Messenger API, provides a full command/event system, and includes a web dashboard with MongoDB/SQLite support for managing threads, users and runtime configuration.
 
-This fork focuses on production readiness: a modern dependency stack, a hardened login flow, safer database handling, and a set of new quality-of-life features.
+This fork focuses on production readiness, stability, safer database handling, modern dependencies and useful quality-of-life features.
 
-«Table of contents»
+<div align="center">"⚡ Modern" • "🛡️ Hardened" • "🚀 Fast" • "🎨 Customizable"
 
-✨ Enhanced features in this fork
+</div>---
 
-🚧 Requirements
+📚 Table of Contents
 
-📦 Installation
-
-⚙️ Configuration
-
-🚀 Running the bot
-
-💡 How it works
-
-🛠️ Creating new commands
-
-🌐 Supported languages
-
-📌 Common problems
-
-❌ Do not use unofficial copies
-
-📸 Screenshots
-
-👥 Credits
-
-📜 License
-
----
-
-✨ Enhanced features in this fork
-
-New bot behaviours
-
-Powered by xtreme-fca — the API layer is xtreme-fca by @lazyanik, a hardened fork of the unofficial Messenger API with built-in auto-reconnect and MQTT recovery.
-
-Music search — looks up a song by title or artist through the Messenger music catalog and sends the track into the chat, using searchMusic from the API layer.
-
-Reaction unsend — react with a configured emoji (default 😡 / 😠) to delete the bot's own message. Admin-gated by default.
-
-Reaction mirror — the bot mirrors any (or a configured set of) emoji that an admin reacts to on another user's message.
-
-Command suggestions — a typo such as -holp returns “Did you mean -help?” using transposition-aware fuzzy matching.
-
-NoPrefix mode — optionally let commands run without the prefix (help == -help), with an ignore list and admin-only mode.
-
-User-agent pool — 11 user agents shipped in config; randomUserAgent picks one per login to reduce detection.
-
-Modernised foundation
-
-Uses the xtreme-fca API layer (source).
-
-Updated dependencies to current stable releases; removed unused packages.
-
-Uses the native canvas package (v3) for image rendering.
-
-Hardened the login flow: non-fatal cookie liveness pre-check, optional Google credentials, and .dev.* files used only when NODE_ENV=development.
-
-Reliable SQLite path override via GOAT_DB_PATH, with busy-timeout to avoid lock errors on network filesystems.
-
-npm start / npm run dev / npm run prod scripts and a postinstall rebuild for native modules.
+- ✨ "Enhanced Features" (#-enhanced-features-in-this-fork)
+- 🚧 "Requirements" (#-requirements)
+- 📦 "Installation" (#-installation)
+- ⚙️ "Configuration" (#️-configuration)
+- 🚀 "Running the Bot" (#-running-the-bot)
+- 💡 "How It Works" (#-how-it-works)
+- 🛠️ "Creating New Commands" (#️-creating-new-commands)
+- 🌐 "Supported Languages" (#-supported-languages)
+- 📌 "Common Problems" (#-common-problems)
+- ❌ "Do Not Use Unofficial Copies" (#-do-not-use-unofficial-copies)
+- 📸 "Screenshots" (#-screenshots)
+- 👥 "Credits" (#-credits)
+- 📜 "License & Project Rules" (#-license--project-rules)
 
 ---
 
+✨ Enhanced Features in This Fork
+
+🤖 New Bot Behaviours
+
+- xtreme-fca Integration — API layer powered by xtreme-fca, a hardened fork of the unofficial Messenger API with auto-reconnect and MQTT recovery.
+- 🎵 Music Search — Search songs by title or artist through the Messenger music catalog and send tracks directly into chat.
+- 😡 Reaction Unsend — React with a configured emoji to delete the bot's own message. Admin-gated by default.
+- 🔁 Reaction Mirror — Mirror configured emoji reactions from admins onto another user's message.
+- 💡 Command Suggestions — Typos such as "-holp" can return suggestions like "Did you mean -help?"
+- ⚡ NoPrefix Mode — Run commands without a prefix when enabled, with ignore lists and optional admin-only mode.
+- 🌐 User-Agent Pool — Multiple user agents are shipped in the configuration; a random one can be selected for each login.
+
+🧩 Modernised Foundation
+
+- Uses the xtreme-fca API layer.
+- Updated dependencies and removed unused packages.
+- Uses the native Canvas v3 package for image rendering.
+- Hardened login flow with cookie liveness pre-check.
+- Optional Google credentials support.
+- ".dev.*" files are used only when "NODE_ENV=development".
+- Reliable SQLite path override through "GOAT_DB_PATH".
+- SQLite busy-timeout support to reduce lock errors on network filesystems.
+- Includes "npm start", "npm run dev" and "npm run prod".
+- Native modules are rebuilt automatically through "postinstall".
+
+<div align="center">✨ ──────────── SATURO ENGINE ──────────── ✨
+
+</div>---
+
 🚧 Requirements
 
-Node.js 22.x (download)
-
-Git
-
-Optional: MongoDB (otherwise the bot uses SQLite)
-
-Basic familiarity with JavaScript / Node.js and the unofficial Messenger API
+- Node.js 22.x
+- Git
+- MongoDB (optional — SQLite is used otherwise)
+- Basic knowledge of JavaScript / Node.js
+- Basic understanding of the unofficial Messenger API
 
 ---
 
 📦 Installation
 
-1. Clone the repository
+1. Clone the Repository
 
 git clone https://github.com/lazyanik/SATURO-BOT-V2.git
 cd SATURO-BOT-V2
 
-2. Install dependencies
+2. Install Dependencies
 
 npm install
 
-3. Start the bot
+3. Start the Bot
 
 npm start
 
-On first run the bot prompts for an account. You can supply one of the following in account.txt:
+On first run, the bot will prompt for an account.
 
-a cookie string / Netscape cookie file,
+You can provide one of the following through "account.txt":
 
-a JSON app-state / cookie array,
+- Cookie string / Netscape cookie file
+- JSON app-state / cookie array
+- "EAAAA…" access token
+- Email + password pair through "config.json"
 
-an EAAAA… access token,
-
-or an email, password pair (in config.json) for password login.
-
-A step-by-step guide is available in STEP_INSTALL.md.
+📘 A step-by-step installation guide is available in "STEP_INSTALL.md".
 
 ---
 
 ⚙️ Configuration
 
-All settings live in config.json at the project root. Commonly edited keys:
+All main settings are stored in:
 
-Key	Purpose
+config.json
 
-prefix	Command prefix (default -).
+Common Configuration Keys
 
-language	Bot language (en or vi).
+Key| Purpose
+"prefix"| Command prefix, default "-"
+"language"| Bot language: "en" or "vi"
+"nickNameBot"| Bot display name
+"adminBot"| Bot-admin user IDs
+"dashBoard"| Dashboard enable/port/session configuration
+"dashBoard.sessionSecret"| Persistent dashboard session secret
+"serverUptime.socket.verifyToken"| Socket.io uptime server authentication
+"commandSuggestion"| Command typo suggestions
+"noPrefix"| Prefix-free command settings
+"reactUnsend"| Delete bot messages through reactions
+"reactMirror"| Reaction mirror settings
+"facebookAccount.userAgents"| User-agent pool
+"optionsFca.randomUserAgent"| Random user-agent per login
+"optionsFca.autoReconnect"| Automatic MQTT reconnect
 
-nickNameBot	Display name used in some replies.
-
-adminBot	Array of bot-admin user IDs (role 2).
-
-dashBoard	Enable/disable the web dashboard, set its port, and (optionally) sessionSecret.
-
-dashBoard.sessionSecret	Optional fixed secret for dashboard login sessions. Set a long random string to keep logins valid across restarts; leave empty to auto-generate per start.
-
-serverUptime.socket.verifyToken	Password clients send to connect to the socket.io uptime server. Set a long random string; when empty a temporary token is generated at startup.
-
-commandSuggestion	{ enable: true } — suggest the closest command on typos.
-
-noPrefix	{ enable, onlyAdminBot, ignoreCommands } — prefix-free commands.
-
-reactUnsend	{ enable, emojis, onlyAdmin } — delete bot messages via reaction.
-
-reactMirror	{ enable, mirrorAllEmojis, emojis, onlyAdmin } — mirror reactions.
-
-facebookAccount.userAgents	Pool of user agents.
-
-optionsFca.randomUserAgent	Pick a random user agent per login.
-
-optionsFca.autoReconnect	Reconnect MQTT automatically when the connection drops. Keep true.
-
-New keys are merged with safe defaults on startup, so upgrading an old config.json will not break the bot.
+«Tip: New configuration keys are merged with safe defaults during startup, so updating an older "config.json" should not normally break the bot.»
 
 ---
 
-🚀 Running the bot
+🚀 Running the Bot
 
-npm start          # production-style run
-npm run dev        # development run (uses .dev.* files)
-npm run prod       # explicit production run
+Available Scripts
 
-Environment variables:
+npm start
+npm run dev
+npm run prod
 
-Variable	Effect
+Environment Variables
 
-NODE_ENV	development enables the .dev.* config files.
+Variable| Effect
+"NODE_ENV"| Enables ".dev.*" configuration files in development mode
+"GOAT_DB_PATH"| Overrides the SQLite database path
 
-GOAT_DB_PATH	Overrides the SQLite database path (useful on network filesystems).
+When:
 
-When dashBoard.enable is true, the web dashboard is served on the configured port (default 3001).
+"dashBoard": {
+  "enable": true
+}
 
-Dashboard login sessions are stored on disk under database/data/sessions/ (a lightweight file-backed store), so the process no longer uses the in-memory session store that leaks memory and logs a production warning. Session files respect the 7-day cookie lifetime and are cleaned up automatically.
+the web dashboard is served on the configured port, 3001 by default.
+
+Dashboard sessions are stored under:
+
+database/data/sessions/
+
+The file-backed session system avoids the previous in-memory session store and automatically cleans expired sessions according to the 7-day cookie lifetime.
 
 ---
 
-💡 How it works
+💡 How It Works
 
-The bot uses the unofficial Messenger API to send and receive messages. On every new event (message, reaction, join/leave, admin change, …) an event is dispatched to handlerEvents, which resolves the command and runs it.
+SATURO BOT uses the unofficial Messenger API to send and receive events.
 
-onStart — a user invoked a command:
+When an event arrives, it is dispatched to the appropriate handler, which resolves commands and executes them according to permissions, cooldowns and configuration.
 
-check whether a command was actually called (prefix or no-prefix mode),
+Event Types
 
-check bans / admin-only mode,
+"onStart" — Runs when a user invokes a command.
 
-check the user's permission role,
+- Detects prefix / no-prefix commands
+- Checks bans
+- Checks permissions
+- Checks cooldowns
+- Executes and logs the command
 
-check the command cooldown,
+"onChat" — Runs on normal incoming messages.
 
-execute and log.
+"onFirstChat" — Runs when a thread is seen for the first time since startup.
 
-onChat — runs on any message; executes a returned function/async function after the same ban/permission checks.
-
-onFirstChat — runs the first time a thread is seen since startup, otherwise behaves like onChat.
-
-onReaction — runs when a user reacts to a message registered in GoatBot.onReaction:
+"onReaction" — Handles reactions registered through "GoatBot.onReaction".
 
 global.GoatBot.onReaction.set(msg.messageID, {
-	messageID: msg.messageID,
-	commandName,
-	// ...
+  messageID: msg.messageID,
+  commandName
 });
 
-A delete method is added automatically to remove the entry.
+"onReply" — Handles replies registered through "GoatBot.onReply".
 
-onReply — runs when a user replies to a message registered in GoatBot.onReply (same pattern as onReaction).
+"onEvent" — Handles system events such as:
 
-onEvent — runs for system events (join, leave, admin change, …) registered in GoatBot.onEvent.
+- Join
+- Leave
+- Admin changes
+- Other thread events
 
-handlerEvent — runs event commands placed in scripts/events/, looping over every registered eventCommands entry.
+"handlerEvent" — Loads and executes event commands from:
+
+scripts/events/
 
 ---
 
-🛠️ Creating new commands
+🛠️ Creating New Commands
 
-Commands live in scripts/cmds/ and are loaded automatically. A minimal command:
+Commands are stored inside:
+
+scripts/cmds/
+
+and loaded automatically.
+
+Minimal Command Example
 
 module.exports = {
-	config: {
-		name: "hello",
-		version: "1.0",
-		author: "Your Name",
-		countDown: 5,
-		role: 0,
-		description: { en: "say hello" },
-		category: "fun",
-		guide: { en: "{pn} <name>" }
-	},
-	langs: {
-		en: { reply: "Hello, %1!" }
-	},
-	onStart: async function ({ args, message, getLang }) {
-		return message.reply(getLang("reply", args[0] || "world"));
-	}
+  config: {
+    name: "hello",
+    version: "1.0",
+    author: "Your Name",
+    countDown: 5,
+    role: 0,
+    description: {
+      en: "say hello"
+    },
+    category: "fun",
+    guide: {
+      en: "{pn} <name>"
+    }
+  },
+
+  langs: {
+    en: {
+      reply: "Hello, %1!"
+    }
+  },
+
+  onStart: async function ({ args, message, getLang }) {
+    return message.reply(
+      getLang("reply", args[0] || "world")
+    );
+  }
 };
 
-category is required; author should be kept accurate.
+Permission Roles
 
-Use role: 0 (everyone), 1 (group admins) or 2 (bot admins).
+Role| Access
+"0"| Everyone
+"1"| Group administrators
+"2"| Bot administrators
 
-Add localised strings under langs.
+Add localized strings under the appropriate "langs" section.
 
-Full reference: DOCS.md.
-
----
-
-🌐 Supported languages
-
-[x] en — English
-
-[x] vi — Vietnamese
-
-Set the language in config.json, and customise strings under languages/, languages/cmds/ and languages/events/.
+📘 Full reference: "DOCS.md"
 
 ---
 
-📌 Common problems
+🌐 Supported Languages
+
+- [x] 🇬🇧 English — "en"
+- [x] 🇻🇳 Vietnamese — "vi"
+
+Set the language inside "config.json".
+
+Language files can be customized under:
+
+languages/
+languages/cmds/
+languages/events/
+
+---
+
+📌 Common Problems
 
 <details>
-	<summary>📌 Error 400: redirect_uri_mismatch</summary>
-	<p><img src="https://i.ibb.co/6Fbjd4r/image.png" width="250px"></p>
-	<p>1. Enable the Google Drive API: <a href="https://youtu.be/nTIT8OQeRnY?t=347">Tutorial</a></p>
-	<p>2. Add <a href="https://developers.google.com/oauthplayground">https://developers.google.com/oauthplayground</a> (no trailing slash) to <b>Authorized redirect URIs</b> in the <b>OAuth consent screen</b>: <a href="https://youtu.be/nTIT8OQeRnY?t=491">Tutorial</a></p>
-	<p>3. Choose <b>https://www.googleapis.com/auth/drive</b> and <b>https://mail.google.com/</b> in the <b>OAuth 2.0 Playground</b>: <a href="https://youtu.be/nTIT8OQeRnY?t=600">Tutorial</a></p>
+<summary>📌 Error 400: redirect_uri_mismatch</summary><br><img src="https://i.ibb.co/6Fbjd4r/image.png" width="250px">1. Enable the Google Drive API.
+2. Add "https://developers.google.com/oauthplayground" to Authorized Redirect URIs.
+3. Select:
+   - "https://www.googleapis.com/auth/drive"
+   - "https://mail.google.com/"
+
+Tutorial:
+
+https://youtu.be/nTIT8OQeRnY?t=347
+
 </details><details>
-	<summary>📌 Error for site owners: Invalid domain for site key</summary>
-	<p><img src="https://i.ibb.co/2gZttY7/image.png" width="250px"></p>
-	<p>1. Go to <a href="https://www.google.com/recaptcha/admin">https://www.google.com/recaptcha/admin</a></p>
-	<p>2. Add the domain <b>repl.co</b> (not <b>repl.com</b>) to <b>Domains</b> in <b>reCAPTCHA v2</b>: <a href="https://youtu.be/nTIT8OQeRnY?t=698">Tutorial</a></p>
+<summary>📌 Error for site owners: Invalid domain for site key</summary><br><img src="https://i.ibb.co/2gZttY7/image.png" width="250px">1. Open the Google reCAPTCHA admin panel.
+2. Add "repl.co" to the domain list for reCAPTCHA v2.
+
+Tutorial:
+
+https://youtu.be/nTIT8OQeRnY?t=698
+
 </details><details>
-	<summary>📌 GaxiosError: invalid_grant, unauthorized_client</summary>
-	<p><img src="https://i.ibb.co/n7w9TkH/image.png" width="250px"></p>
-	<p><img src="https://i.ibb.co/XFKKY9c/image.png" width="250px"></p>
-	<p><img src="https://i.ibb.co/f4mc5Dp/image.png" width="250px"></p>
-	<p>- If the project is not published in the Google console, the refresh token expires after one week and must be regenerated: <a href="https://youtu.be/nTIT8OQeRnY?t=445">Tutorial</a></p>
+<summary>📌 GaxiosError: invalid_grant / unauthorized_client</summary><br><img src="https://i.ibb.co/n7w9TkH/image.png" width="250px"><img src="https://i.ibb.co/XFKKY9c/image.png" width="250px"><img src="https://i.ibb.co/f4mc5Dp/image.png" width="250px">If the Google project is not published, the refresh token can expire after one week and may need to be regenerated.
+
+Tutorial:
+
+https://youtu.be/nTIT8OQeRnY?t=445
+
 </details><details>
-	<summary>📌 GaxiosError: invalid_client</summary>
-	<p><img src="https://i.ibb.co/st3W6v4/Pics-Art-01-01-09-10-49.jpg" width="250px"></p>
-	<p>- Check that the Google project <code>client_id</code> was entered correctly: <a href="https://youtu.be/nTIT8OQeRnY?t=509">Tutorial</a></p>
+<summary>📌 GaxiosError: invalid_client</summary><br><img src="https://i.ibb.co/st3W6v4/Pics-Art-01-01-09-10-49.jpg" width="250px">Check that the Google project's "client_id" was entered correctly.
+
+Tutorial:
+
+https://youtu.be/nTIT8OQeRnY?t=509
+
 </details><details>
-	<summary>📌 Error 403: access_denied</summary>
-	<p><img src="https://i.ibb.co/dtr5x3/image.png" width="250px"></p>
-	<p>- If the project is not published in the Google console, only approved accounts added to the project can use it: <a href="https://youtu.be/nTIT8OQeRnY?t=438">Tutorial</a></p>
+<summary>📌 Error 403: access_denied</summary><br><img src="https://i.ibb.co/dtr5x3/image.png" width="250px">If the Google project is not published, only approved accounts added to the project can use it.
+
+Tutorial:
+
+https://youtu.be/nTIT8OQeRnY?t=438
+
 </details>---
 
-❌ Do not use unofficial copies
+❌ Do Not Use Unofficial Copies
 
 Using unknown source code can expose your device and accounts to malware.
 
-The upstream project is published only at https://github.com/ntkhang03/Goat-Bot-V2; this enhanced fork lives at https://github.com/lazyanik/SATURO-BOT-V2.
+The upstream project is published at:
 
-Copies hosted elsewhere, or re-uploads that remove author credits, are unsupported and violate the license.
+https://github.com/ntkhang03/Goat-Bot-V2
+
+This enhanced fork is available at:
+
+https://github.com/lazyanik/SATURO-BOT-V2
+
+Copies hosted elsewhere, or re-uploads that remove author credits, are unsupported by this project.
 
 ---
 
 📸 Screenshots
 
-Bot
+🤖 Bot
 
 <details>
-	<summary>Rank system</summary>
-	<p><img src="https://i.ibb.co/d0JDJxF/rank.png" width="399px"></p>
-	<p><img src="https://i.ibb.co/WgZzthH/rankup.png" width="399px"></p>
-	<p><img src="https://i.ibb.co/hLTThLW/customrankcard.png" width="399px"></p>
-</details><details>
-	<summary>Weather</summary>
-	<p><img src="https://i.ibb.co/2FwWVLv/weather.png" width="399px"></p>
-</details><details>
-	<summary>Join / leave notifications</summary>
-	<p><img src="https://i.ibb.co/Jsb5Jxf/wcgb.png" width="399px"></p>
-</details><details>
-	<summary>Openjourney</summary>
-	<p><img src="https://i.ibb.co/XJfwj1X/Screenshot-2023-05-09-22-43-58-630-com-facebook-orca.jpg" width="399px"></p>
-</details><details>
-	<summary>GPT</summary>
-	<p><img src="https://i.ibb.co/D4wRbM3/Screenshot-2023-05-09-22-47-48-037-com-facebook-orca.jpg" width="399px"></p>
-	<p><img src="https://i.ibb.co/z8HqPkH/Screenshot-2023-05-09-22-47-53-737-com-facebook-orca.jpg" width="399px"></p>
-	<p><img src="https://i.ibb.co/19mZQpR/Screenshot-2023-05-09-22-48-02-516-com-facebook-orca.jpg" width="399px"></p>
-</details>Dashboard
+<summary>🏆 Rank System</summary><p>
+<img src="https://i.ibb.co/d0JDJxF/rank.png" width="399px">
+<img src="https://i.ibb.co/WgZzthH/rankup.png" width="399px">
+<img src="https://i.ibb.co/hLTThLW/customrankcard.png" width="399px">
+</p></details><details>
+<summary>🌤️ Weather</summary><p>
+<img src="https://i.ibb.co/2FwWVLv/weather.png" width="399px">
+</p></details><details>
+<summary>👋 Join / Leave Notifications</summary><p>
+<img src="https://i.ibb.co/Jsb5Jxf/wcgb.png" width="399px">
+</p></details><details>
+<summary>🎨 Openjourney</summary><p>
+<img src="https://i.ibb.co/XJfwj1X/Screenshot-2023-05-09-22-43-58-630-com-facebook-orca.jpg" width="399px">
+</p></details><details>
+<summary>🤖 GPT</summary><p>
+<img src="https://i.ibb.co/D4wRbM3/Screenshot-2023-05-09-22-47-48-037-com-facebook-orca.jpg" width="399px">
+<img src="https://i.ibb.co/z8HqPkH/Screenshot-2023-05-09-22-47-53-737-com-facebook-orca.jpg" width="399px">
+<img src="https://i.ibb.co/19mZQpR/Screenshot-2023-05-09-22-48-02-516-com-facebook-orca.jpg" width="399px">
+</p></details>🌐 Dashboard
 
 <details>
-	<summary>Home</summary>
-	<p><img src="https://i.postimg.cc/GtwP4Cqm/Screenshot-2023-12-23-105357.png" width="399px"></p>
-	<p><img src="https://i.postimg.cc/MTjbZT0L/Screenshot-2023-12-23-105554.png" width="399px"></p>
-</details><details>
-	<summary>Stats</summary>
-	<p><img src="https://i.postimg.cc/QtXt98B7/image.png" width="399px"></p>
-</details><details>
-	<summary>Login / Register</summary>
-	<p><img src="https://i.postimg.cc/Jh05gKsM/Screenshot-2023-12-23-105743.png" width="399px"></p>
-	<p><img src="https://i.postimg.cc/j5nM9K8m/Screenshot-2023-12-23-105748.png" width="399px"></p>
-</details><details>
-	<summary>Thread management</summary>
-	<p><img src="https://i.postimg.cc/RF237v1Z/Screenshot-2023-12-23-105913.png" width="399px"></p>
-</details><details>
-	<summary>Custom on/off</summary>
-	<p><img src="https://i.ibb.co/McDRhmX/image.png" width="399px"></p>
-</details><details>
-	<summary>Custom welcome / leave messages</summary>
-	<p><img src="https://i.ibb.co/6ZrQqc1/image.png" width="399px"></p>
-	<p><img src="https://i.ibb.co/G53JsXm/image.png" width="399px"></p>
-</details>---
+<summary>🏠 Home</summary><p>
+<img src="https://i.postimg.cc/GtwP4Cqm/Screenshot-2023-12-23-105357.png" width="399px">
+<img src="https://i.postimg.cc/MTjbZT0L/Screenshot-2023-12-23-105554.png" width="399px">
+</p></details><details>
+<summary>📊 Stats</summary><p>
+<img src="https://i.postimg.cc/QtXt98B7/image.png" width="399px">
+</p></details><details>
+<summary>🔐 Login / Register</summary><p>
+<img src="https://i.postimg.cc/Jh05gKsM/Screenshot-2023-12-23-105743.png" width="399px">
+<img src="https://i.postimg.cc/j5nM9K8m/Screenshot-2023-12-23-105748.png" width="399px">
+</p></details><details>
+<summary>🧵 Thread Management</summary><p>
+<img src="https://i.postimg.cc/RF237v1Z/Screenshot-2023-12-23-105913.png" width="399px">
+</p></details><details>
+<summary>⚙️ Custom On / Off</summary><p>
+<img src="https://i.ibb.co/McDRhmX/image.png" width="399px">
+</p></details><details>
+<summary>💬 Custom Welcome / Leave Messages</summary><p>
+<img src="https://i.ibb.co/6ZrQqc1/image.png" width="399px">
+<img src="https://i.ibb.co/G53JsXm/image.png" width="399px">
+</p></details>---
 
 👥 Credits
 
-Original author: NTKhang (ntkhang03) — creator of Goat-Bot-V2.
+Original Author
 
-Modified and enhanced by: Anik Islam Sadik (@lazyanik) 🕊️ — modernised dependency stack, hardened login, and new features.
+NTKhang ("@ntkhang03") — Creator of Goat-Bot-V2.
 
-Messenger API layer: xtreme-fca by @lazyanik (source).
+Modified & Enhanced By
 
-Bot name: Anik Islam Sadik 🕊️.
+Anik Islam Sadik ("@lazyanik") 🕊️
 
-📜 License
+Modernised dependency stack, hardened login flow, database improvements and additional features.
 
-VIETNAMESE
+Messenger API Layer
 
-Nếu bạn vi phạm bất kỳ quy tắc nào, bạn sẽ bị cấm sử dụng dự án của tôi
+xtreme-fca by "@lazyanik"
 
-Không bán mã nguồn của tôi
+Bot Name
 
-Không tự xưng là chủ sở hữu của mã nguồn của tôi
-
-Không kiếm tiền từ mã nguồn của tôi (chẳng hạn như: mua bán lệnh, mua bán/cho thuê bot, kêu gọi quyên góp, v.v.)
-
-Không xóa/sửa đổi credit (tên tác giả) trong mã nguồn của tôi
-
-ENGLISH
-
-If you violate any rules, you will be banned from using my project
-
-Don't sell my source code
-
-Don't claim my source code as your own
-
-Do not monetize my source code (such as: buy and sell commands, buy and sell bots, call for donations, etc.)
-
-Don't remove/edit my credits (author name) in my source code
+SATURO BOT V2
 
 ---
 
-<div align="center">🕊️✨ SATURO BOT V2 ✨🕊️
+📜 License & Project Rules
+
+This project retains the MIT license information from the original project.
+
+Project Rules
+
+If you use or modify this project, please keep the original author and developer credits visible.
+
+- Do not claim the source code as your own.
+- Do not remove or intentionally hide author credits.
+- Do not redistribute modified copies while falsely presenting them as the official repository.
+- Do not use the SATURO BOT branding to impersonate the official project.
+- Respect the original project's license and attribution requirements.
+
+«Important: The MIT license itself permits broad reuse, modification and redistribution. The project-specific requests above should therefore be treated as attribution/branding guidelines unless a separate legally enforceable license replaces MIT.»
+
+---
+
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&text=SATURO%20BOT%20V2&fontSize=30&fontAlignY=70&animation=twinkling">🕊️✨ SATURO BOT V2 ✨🕊️
 
 Developed & Enhanced with ❤️ by Anik Islam Sadik
 
-🚀 Built with passion • ⚡ Made for performance • 💻 Crafted for developers
+"🚀 Built with passion" • "⚡ Made for performance" • "💻 Crafted for developers"
 
 🌐 Repository: "lazyanik/SATURO-BOT-V2"
 
 ⭐ If you find this project useful, consider giving it a star!
 
 💙 Thank you for using SATURO BOT V2
+
 🔥 Keep coding • Keep creating • Keep improving 🔥
 
-© Anik Islam Sadik — All Rights Reserved
+<br>© Anik Islam Sadik — SATURO BOT V2
 
 </div>
