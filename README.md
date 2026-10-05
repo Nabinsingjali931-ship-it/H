@@ -1,14 +1,30 @@
-<div align="center"><img src="https://i.ibb.co/RQ28H2p/banner.png" alt="SATURO BOT V2 Banner"><h1>
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=SATURO%20BOT%20V2&fontSize=60&fontAlignY=38&animation=fadeIn&desc=Enhanced%20Edition&descAlignY=58&descSize=22" width="100%" alt="SATURO BOT V2 Header">
+
+<img src="https://i.ibb.co/RQ28H2p/banner.png" alt="SATURO BOT V2 Banner">
+
+<h1>
   <img src="./dashboard/images/logo-non-bg.png" width="24px">
   SATURO BOT V2 — Enhanced Edition
-</h1><p>
+</h1>
+
+<a href="https://github.com/lazyanik/SATURO-BOT-V2">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=800&color=00F7FF&center=true&vCenter=true&width=700&lines=A+feature-rich+Facebook+Messenger+bot+framework;Web+dashboard+%2B+MongoDB+%2F+SQLite+support;Modern+%E2%9A%A1+Hardened+%F0%9F%9B%A1%EF%B8%8F+Fast+%F0%9F%9A%80+Customizable+%F0%9F%8E%A8" alt="Typing animation">
+</a>
+
+<p>
   <em>A feature-rich Facebook Messenger bot framework with a web dashboard, built on an unofficial Messenger API.</em>
-</p><p>
+</p>
+
+<p>
   <img src="https://img.shields.io/badge/Node.js-22.x-brightgreen.svg?style=flat-square" alt="Node.js 22.x">
   <img alt="version" src="https://img.shields.io/badge/dynamic/json?color=brightgreen&label=version&prefix=v&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Flazyanik%2FSATURO-BOT-V2%2Fmain%2Fpackage.json&style=flat-square">
   <img alt="license" src="https://img.shields.io/badge/license-MIT-green?style=flat-square">
   <img alt="platform" src="https://img.shields.io/badge/platform-Node.js%20%7C%20Docker-informational?style=flat-square">
-</p><p>
+</p>
+
+<p>
   <sub>
     Maintained fork of
     <a href="https://github.com/ntkhang03/Goat-Bot-V2">Goat-Bot-V2</a>
@@ -18,68 +34,78 @@
     <a href="https://github.com/lazyanik">Anik Islam Sadik</a>
     (@lazyanik) 🕊️</b>
   </sub>
-</p><p>
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=auto" width="70%">
-</p></div>📖 Overview
+</p>
 
-SATURO BOT V2 — Enhanced Edition is a self-hosted Messenger chat-bot framework built around the Goat-Bot-V2 architecture.
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider">
+
+</div>
+
+## 📖 Overview
+
+**SATURO BOT V2 — Enhanced Edition** is a self-hosted Messenger chat-bot framework built around the Goat-Bot-V2 architecture.
 
 It connects through an unofficial Messenger API, provides a full command/event system, and includes a web dashboard with MongoDB/SQLite support for managing threads, users and runtime configuration.
 
 This fork focuses on production readiness, stability, safer database handling, modern dependencies and useful quality-of-life features.
 
-<div align="center">"⚡ Modern" • "🛡️ Hardened" • "🚀 Fast" • "🎨 Customizable"
+<div align="center">
 
-</div>---
+**⚡ Modern** • **🛡️ Hardened** • **🚀 Fast** • **🎨 Customizable**
 
-📚 Table of Contents
-
-- ✨ "Enhanced Features" (#-enhanced-features-in-this-fork)
-- 🚧 "Requirements" (#-requirements)
-- 📦 "Installation" (#-installation)
-- ⚙️ "Configuration" (#️-configuration)
-- 🚀 "Running the Bot" (#-running-the-bot)
-- 💡 "How It Works" (#-how-it-works)
-- 🛠️ "Creating New Commands" (#️-creating-new-commands)
-- 🌐 "Supported Languages" (#-supported-languages)
-- 📌 "Common Problems" (#-common-problems)
-- ❌ "Do Not Use Unofficial Copies" (#-do-not-use-unofficial-copies)
-- 📸 "Screenshots" (#-screenshots)
-- 👥 "Credits" (#-credits)
-- 📜 "License & Project Rules" (#-license--project-rules)
+</div>
 
 ---
 
-✨ Enhanced Features in This Fork
+## 📚 Table of Contents
 
-🤖 New Bot Behaviours
+- [✨ Enhanced Features](#-enhanced-features-in-this-fork)
+- [🚧 Requirements](#-requirements)
+- [📦 Installation](#-installation)
+- [⚙️ Configuration](#️-configuration)
+- [🚀 Running the Bot](#-running-the-bot)
+- [💡 How It Works](#-how-it-works)
+- [🛠️ Creating New Commands](#️-creating-new-commands)
+- [🌐 Supported Languages](#-supported-languages)
+- [📸 Screenshots](#-screenshots)
+- [👥 Credits](#-credits)
+- [📜 License & Project Rules](#-license--project-rules)
 
-- xtreme-fca Integration — API layer powered by xtreme-fca, a hardened fork of the unofficial Messenger API with auto-reconnect and MQTT recovery.
-- 🎵 Music Search — Search songs by title or artist through the Messenger music catalog and send tracks directly into chat.
-- 😡 Reaction Unsend — React with a configured emoji to delete the bot's own message. Admin-gated by default.
-- 🔁 Reaction Mirror — Mirror configured emoji reactions from admins onto another user's message.
-- 💡 Command Suggestions — Typos such as "-holp" can return suggestions like "Did you mean -help?"
-- ⚡ NoPrefix Mode — Run commands without a prefix when enabled, with ignore lists and optional admin-only mode.
-- 🌐 User-Agent Pool — Multiple user agents are shipped in the configuration; a random one can be selected for each login.
+---
 
-🧩 Modernised Foundation
+## ✨ Enhanced Features in This Fork
+
+### 🤖 New Bot Behaviours
+
+- **xtreme-fca Integration** — API layer powered by xtreme-fca, a hardened fork of the unofficial Messenger API with auto-reconnect and MQTT recovery.
+- 🎵 **Music Search** — Search songs by title or artist through the Messenger music catalog and send tracks directly into chat.
+- 😡 **Reaction Unsend** — React with a configured emoji to delete the bot's own message. Admin-gated by default.
+- 🔁 **Reaction Mirror** — Mirror configured emoji reactions from admins onto another user's message.
+- 💡 **Command Suggestions** — Typos such as `-holp` can return suggestions like "Did you mean `-help`?"
+- ⚡ **NoPrefix Mode** — Run commands without a prefix when enabled, with ignore lists and optional admin-only mode.
+- 🌐 **User-Agent Pool** — Multiple user agents are shipped in the configuration; a random one can be selected for each login.
+
+### 🧩 Modernised Foundation
 
 - Uses the xtreme-fca API layer.
 - Updated dependencies and removed unused packages.
 - Uses the native Canvas v3 package for image rendering.
 - Hardened login flow with cookie liveness pre-check.
 - Optional Google credentials support.
-- ".dev.*" files are used only when "NODE_ENV=development".
-- Reliable SQLite path override through "GOAT_DB_PATH".
+- `.dev.*` files are used only when `NODE_ENV=development`.
+- Reliable SQLite path override through `GOAT_DB_PATH`.
 - SQLite busy-timeout support to reduce lock errors on network filesystems.
-- Includes "npm start", "npm run dev" and "npm run prod".
-- Native modules are rebuilt automatically through "postinstall".
+- Includes `npm start`, `npm run dev` and `npm run prod`.
+- Native modules are rebuilt automatically through `postinstall`.
 
-<div align="center">✨ ──────────── SATURO ENGINE ──────────── ✨
+<div align="center">
 
-</div>---
+✨ ──────────── **SATURO ENGINE** ──────────── ✨
 
-🚧 Requirements
+</div>
+
+---
+
+## 🚧 Requirements
 
 - Node.js 22.x
 - Git
@@ -89,101 +115,117 @@ This fork focuses on production readiness, stability, safer database handling, m
 
 ---
 
-📦 Installation
+## 📦 Installation
 
-1. Clone the Repository
+### 1. Clone the Repository
 
+```bash
 git clone https://github.com/lazyanik/SATURO-BOT-V2.git
 cd SATURO-BOT-V2
+```
 
-2. Install Dependencies
+### 2. Install Dependencies
 
+```bash
 npm install
+```
 
-3. Start the Bot
+### 3. Start the Bot
 
+```bash
 npm start
+```
 
 On first run, the bot will prompt for an account.
 
-You can provide one of the following through "account.txt":
+You can provide one of the following through `account.txt`:
 
 - Cookie string / Netscape cookie file
 - JSON app-state / cookie array
-- "EAAAA…" access token
-- Email + password pair through "config.json"
+- `EAAAA…` access token
+- Email + password pair through `config.json`
 
-📘 A step-by-step installation guide is available in "STEP_INSTALL.md".
+📘 A step-by-step installation guide is available in [`STEP_INSTALL.md`](./STEP_INSTALL.md).
 
 ---
 
-⚙️ Configuration
+## ⚙️ Configuration
 
 All main settings are stored in:
 
+```text
 config.json
+```
 
-Common Configuration Keys
+### Common Configuration Keys
 
-Key| Purpose
-"prefix"| Command prefix, default "-"
-"language"| Bot language: "en" or "vi"
-"nickNameBot"| Bot display name
-"adminBot"| Bot-admin user IDs
-"dashBoard"| Dashboard enable/port/session configuration
-"dashBoard.sessionSecret"| Persistent dashboard session secret
-"serverUptime.socket.verifyToken"| Socket.io uptime server authentication
-"commandSuggestion"| Command typo suggestions
-"noPrefix"| Prefix-free command settings
-"reactUnsend"| Delete bot messages through reactions
-"reactMirror"| Reaction mirror settings
-"facebookAccount.userAgents"| User-agent pool
-"optionsFca.randomUserAgent"| Random user-agent per login
-"optionsFca.autoReconnect"| Automatic MQTT reconnect
+| Key | Purpose |
+| --- | --- |
+| `prefix` | Command prefix, default `-` |
+| `language` | Bot language: `en` or `vi` |
+| `nickNameBot` | Bot display name |
+| `adminBot` | Bot-admin user IDs |
+| `dashBoard` | Dashboard enable/port/session configuration |
+| `dashBoard.sessionSecret` | Persistent dashboard session secret |
+| `serverUptime.socket.verifyToken` | Socket.io uptime server authentication |
+| `commandSuggestion` | Command typo suggestions |
+| `noPrefix` | Prefix-free command settings |
+| `reactUnsend` | Delete bot messages through reactions |
+| `reactMirror` | Reaction mirror settings |
+| `facebookAccount.userAgents` | User-agent pool |
+| `optionsFca.randomUserAgent` | Random user-agent per login |
+| `optionsFca.autoReconnect` | Automatic MQTT reconnect |
 
-«Tip: New configuration keys are merged with safe defaults during startup, so updating an older "config.json" should not normally break the bot.»
+> **Tip:** New configuration keys are merged with safe defaults during startup, so updating an older `config.json` should not normally break the bot.
 
 ---
 
-🚀 Running the Bot
+## 🚀 Running the Bot
 
-Available Scripts
+### Available Scripts
 
+```bash
 npm start
 npm run dev
 npm run prod
+```
 
-Environment Variables
+### Environment Variables
 
-Variable| Effect
-"NODE_ENV"| Enables ".dev.*" configuration files in development mode
-"GOAT_DB_PATH"| Overrides the SQLite database path
+| Variable | Effect |
+| --- | --- |
+| `NODE_ENV` | Enables `.dev.*` configuration files in development mode |
+| `GOAT_DB_PATH` | Overrides the SQLite database path |
 
 When:
 
+```json
 "dashBoard": {
   "enable": true
 }
+```
 
-the web dashboard is served on the configured port, 3001 by default.
+the web dashboard is served on the configured port, `3001` by default.
 
 Dashboard sessions are stored under:
 
+```text
 database/data/sessions/
+```
 
 The file-backed session system avoids the previous in-memory session store and automatically cleans expired sessions according to the 7-day cookie lifetime.
 
 ---
 
-💡 How It Works
+## 💡 How It Works
 
 SATURO BOT uses the unofficial Messenger API to send and receive events.
 
 When an event arrives, it is dispatched to the appropriate handler, which resolves commands and executes them according to permissions, cooldowns and configuration.
 
-Event Types
+### Event Types
 
-"onStart" — Runs when a user invokes a command.
+**`onStart`** — Runs when a user invokes a command.
 
 - Detects prefix / no-prefix commands
 - Checks bans
@@ -191,42 +233,49 @@ Event Types
 - Checks cooldowns
 - Executes and logs the command
 
-"onChat" — Runs on normal incoming messages.
+**`onChat`** — Runs on normal incoming messages.
 
-"onFirstChat" — Runs when a thread is seen for the first time since startup.
+**`onFirstChat`** — Runs when a thread is seen for the first time since startup.
 
-"onReaction" — Handles reactions registered through "GoatBot.onReaction".
+**`onReaction`** — Handles reactions registered through `GoatBot.onReaction`.
 
+```js
 global.GoatBot.onReaction.set(msg.messageID, {
   messageID: msg.messageID,
   commandName
 });
+```
 
-"onReply" — Handles replies registered through "GoatBot.onReply".
+**`onReply`** — Handles replies registered through `GoatBot.onReply`.
 
-"onEvent" — Handles system events such as:
+**`onEvent`** — Handles system events such as:
 
 - Join
 - Leave
 - Admin changes
 - Other thread events
 
-"handlerEvent" — Loads and executes event commands from:
+**`handlerEvent`** — Loads and executes event commands from:
 
+```text
 scripts/events/
+```
 
 ---
 
-🛠️ Creating New Commands
+## 🛠️ Creating New Commands
 
 Commands are stored inside:
 
+```text
 scripts/cmds/
+```
 
 and loaded automatically.
 
-Minimal Command Example
+### Minimal Command Example
 
+```js
 module.exports = {
   config: {
     name: "hello",
@@ -255,170 +304,199 @@ module.exports = {
     );
   }
 };
+```
 
-Permission Roles
+### Permission Roles
 
-Role| Access
-"0"| Everyone
-"1"| Group administrators
-"2"| Bot administrators
+| Role | Access |
+| --- | --- |
+| `0` | Everyone |
+| `1` | Group administrators |
+| `2` | Bot administrators |
 
-Add localized strings under the appropriate "langs" section.
+Add localized strings under the appropriate `langs` section.
 
-📘 Full reference: "DOCS.md"
+📘 Full reference: [`DOCS.md`](./DOCS.md)
 
 ---
 
-🌐 Supported Languages
+## 🌐 Supported Languages
 
-- [x] 🇬🇧 English — "en"
-- [x] 🇻🇳 Vietnamese — "vi"
+- [x] 🇬🇧 English — `en`
+- [x] 🇻🇳 Vietnamese — `vi`
 
-Set the language inside "config.json".
+Set the language inside `config.json`.
 
 Language files can be customized under:
 
+```text
 languages/
 languages/cmds/
 languages/events/
+```
 
 ---
 
-📌 Common Problems
+<div align="center">
 
-<details>
-<summary>📌 Error 400: redirect_uri_mismatch</summary><br><img src="https://i.ibb.co/6Fbjd4r/image.png" width="250px">1. Enable the Google Drive API.
-2. Add "https://developers.google.com/oauthplayground" to Authorized Redirect URIs.
-3. Select:
-   - "https://www.googleapis.com/auth/drive"
-   - "https://mail.google.com/"
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2500&pause=700&color=FF6AD5&center=true&vCenter=true&width=650&lines=%F0%9F%9A%80+Fast+%E2%80%A2+Stable+%E2%80%A2+Powerful;%F0%9F%A4%96+Build+your+own+Messenger+bot;%E2%9C%A8+Customize+everything+your+way;%F0%9F%95%8A%EF%B8%8F+Welcome+to+SATURO+BOT+V2" alt="Animated tagline">
 
-Tutorial:
+<br>
 
-https://youtu.be/nTIT8OQeRnY?t=347
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider">
 
-</details><details>
-<summary>📌 Error for site owners: Invalid domain for site key</summary><br><img src="https://i.ibb.co/2gZttY7/image.png" width="250px">1. Open the Google reCAPTCHA admin panel.
-2. Add "repl.co" to the domain list for reCAPTCHA v2.
+### 🌟 Stay Connected
 
-Tutorial:
+<a href="https://github.com/lazyanik/SATURO-BOT-V2/stargazers">
+  <img src="https://img.shields.io/github/stars/lazyanik/SATURO-BOT-V2?style=for-the-badge&logo=github&color=ffd700" alt="Stars">
+</a>
+<a href="https://github.com/lazyanik/SATURO-BOT-V2/network/members">
+  <img src="https://img.shields.io/github/forks/lazyanik/SATURO-BOT-V2?style=for-the-badge&logo=github&color=00f7ff" alt="Forks">
+</a>
+<a href="https://github.com/lazyanik/SATURO-BOT-V2/issues">
+  <img src="https://img.shields.io/github/issues/lazyanik/SATURO-BOT-V2?style=for-the-badge&logo=github&color=ff6ad5" alt="Issues">
+</a>
+<a href="https://github.com/lazyanik/SATURO-BOT-V2/commits/main">
+  <img src="https://img.shields.io/github/last-commit/lazyanik/SATURO-BOT-V2?style=for-the-badge&logo=github&color=7cfc00" alt="Last commit">
+</a>
 
-https://youtu.be/nTIT8OQeRnY?t=698
+<br><br>
 
-</details><details>
-<summary>📌 GaxiosError: invalid_grant / unauthorized_client</summary><br><img src="https://i.ibb.co/n7w9TkH/image.png" width="250px"><img src="https://i.ibb.co/XFKKY9c/image.png" width="250px"><img src="https://i.ibb.co/f4mc5Dp/image.png" width="250px">If the Google project is not published, the refresh token can expire after one week and may need to be regenerated.
+<a href="https://github.com/lazyanik/SATURO-BOT-V2">
+  <img src="https://img.shields.io/badge/⭐_Star_this_repo-if_you_like_it-ffd700?style=for-the-badge" alt="Star this repo">
+</a>
 
-Tutorial:
+<br><br>
 
-https://youtu.be/nTIT8OQeRnY?t=445
+<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="60" alt="sparkles">
 
-</details><details>
-<summary>📌 GaxiosError: invalid_client</summary><br><img src="https://i.ibb.co/st3W6v4/Pics-Art-01-01-09-10-49.jpg" width="250px">Check that the Google project's "client_id" was entered correctly.
+<br>
 
-Tutorial:
+<img src="https://capsule-render.vercel.app/api?type=rect&height=2&color=auto" width="70%">
 
-https://youtu.be/nTIT8OQeRnY?t=509
-
-</details><details>
-<summary>📌 Error 403: access_denied</summary><br><img src="https://i.ibb.co/dtr5x3/image.png" width="250px">If the Google project is not published, only approved accounts added to the project can use it.
-
-Tutorial:
-
-https://youtu.be/nTIT8OQeRnY?t=438
-
-</details>---
-
-❌ Do Not Use Unofficial Copies
-
-Using unknown source code can expose your device and accounts to malware.
-
-The upstream project is published at:
-
-https://github.com/ntkhang03/Goat-Bot-V2
-
-This enhanced fork is available at:
-
-https://github.com/lazyanik/SATURO-BOT-V2
-
-Copies hosted elsewhere, or re-uploads that remove author credits, are unsupported by this project.
+</div>
 
 ---
 
-📸 Screenshots
+## 📸 Screenshots
 
-🤖 Bot
+### 🤖 Bot
 
 <details>
-<summary>🏆 Rank System</summary><p>
+<summary>🏆 Rank System</summary>
+<p>
 <img src="https://i.ibb.co/d0JDJxF/rank.png" width="399px">
 <img src="https://i.ibb.co/WgZzthH/rankup.png" width="399px">
 <img src="https://i.ibb.co/hLTThLW/customrankcard.png" width="399px">
-</p></details><details>
-<summary>🌤️ Weather</summary><p>
+</p>
+</details>
+
+<details>
+<summary>🌤️ Weather</summary>
+<p>
 <img src="https://i.ibb.co/2FwWVLv/weather.png" width="399px">
-</p></details><details>
-<summary>👋 Join / Leave Notifications</summary><p>
+</p>
+</details>
+
+<details>
+<summary>👋 Join / Leave Notifications</summary>
+<p>
 <img src="https://i.ibb.co/Jsb5Jxf/wcgb.png" width="399px">
-</p></details><details>
-<summary>🎨 Openjourney</summary><p>
+</p>
+</details>
+
+<details>
+<summary>🎨 Openjourney</summary>
+<p>
 <img src="https://i.ibb.co/XJfwj1X/Screenshot-2023-05-09-22-43-58-630-com-facebook-orca.jpg" width="399px">
-</p></details><details>
-<summary>🤖 GPT</summary><p>
+</p>
+</details>
+
+<details>
+<summary>🤖 GPT</summary>
+<p>
 <img src="https://i.ibb.co/D4wRbM3/Screenshot-2023-05-09-22-47-48-037-com-facebook-orca.jpg" width="399px">
 <img src="https://i.ibb.co/z8HqPkH/Screenshot-2023-05-09-22-47-53-737-com-facebook-orca.jpg" width="399px">
 <img src="https://i.ibb.co/19mZQpR/Screenshot-2023-05-09-22-48-02-516-com-facebook-orca.jpg" width="399px">
-</p></details>🌐 Dashboard
+</p>
+</details>
+
+### 🌐 Dashboard
 
 <details>
-<summary>🏠 Home</summary><p>
+<summary>🏠 Home</summary>
+<p>
 <img src="https://i.postimg.cc/GtwP4Cqm/Screenshot-2023-12-23-105357.png" width="399px">
 <img src="https://i.postimg.cc/MTjbZT0L/Screenshot-2023-12-23-105554.png" width="399px">
-</p></details><details>
-<summary>📊 Stats</summary><p>
+</p>
+</details>
+
+<details>
+<summary>📊 Stats</summary>
+<p>
 <img src="https://i.postimg.cc/QtXt98B7/image.png" width="399px">
-</p></details><details>
-<summary>🔐 Login / Register</summary><p>
+</p>
+</details>
+
+<details>
+<summary>🔐 Login / Register</summary>
+<p>
 <img src="https://i.postimg.cc/Jh05gKsM/Screenshot-2023-12-23-105743.png" width="399px">
 <img src="https://i.postimg.cc/j5nM9K8m/Screenshot-2023-12-23-105748.png" width="399px">
-</p></details><details>
-<summary>🧵 Thread Management</summary><p>
+</p>
+</details>
+
+<details>
+<summary>🧵 Thread Management</summary>
+<p>
 <img src="https://i.postimg.cc/RF237v1Z/Screenshot-2023-12-23-105913.png" width="399px">
-</p></details><details>
-<summary>⚙️ Custom On / Off</summary><p>
+</p>
+</details>
+
+<details>
+<summary>⚙️ Custom On / Off</summary>
+<p>
 <img src="https://i.ibb.co/McDRhmX/image.png" width="399px">
-</p></details><details>
-<summary>💬 Custom Welcome / Leave Messages</summary><p>
+</p>
+</details>
+
+<details>
+<summary>💬 Custom Welcome / Leave Messages</summary>
+<p>
 <img src="https://i.ibb.co/6ZrQqc1/image.png" width="399px">
 <img src="https://i.ibb.co/G53JsXm/image.png" width="399px">
-</p></details>---
-
-👥 Credits
-
-Original Author
-
-NTKhang ("@ntkhang03") — Creator of Goat-Bot-V2.
-
-Modified & Enhanced By
-
-Anik Islam Sadik ("@lazyanik") 🕊️
-
-Modernised dependency stack, hardened login flow, database improvements and additional features.
-
-Messenger API Layer
-
-xtreme-fca by "@lazyanik"
-
-Bot Name
-
-SATURO BOT V2
+</p>
+</details>
 
 ---
 
-📜 License & Project Rules
+## 👥 Credits
+
+### Original Author
+
+**NTKhang** ([@ntkhang03](https://github.com/ntkhang03)) — Creator of [Goat-Bot-V2](https://github.com/ntkhang03/Goat-Bot-V2).
+
+### Modified & Enhanced By
+
+**Anik Islam Sadik** ([@lazyanik](https://github.com/lazyanik)) 🕊️
+
+Modernised dependency stack, hardened login flow, database improvements and additional features.
+
+### Messenger API Layer
+
+**xtreme-fca** by [@lazyanik](https://github.com/lazyanik)
+
+### Bot Name
+
+**SATURO BOT V2**
+
+---
+
+## 📜 License & Project Rules
 
 This project retains the MIT license information from the original project.
 
-Project Rules
+### Project Rules
 
 If you use or modify this project, please keep the original author and developer credits visible.
 
@@ -428,17 +506,21 @@ If you use or modify this project, please keep the original author and developer
 - Do not use the SATURO BOT branding to impersonate the official project.
 - Respect the original project's license and attribution requirements.
 
-«Important: The MIT license itself permits broad reuse, modification and redistribution. The project-specific requests above should therefore be treated as attribution/branding guidelines unless a separate legally enforceable license replaces MIT.»
+> **Important:** The MIT license itself permits broad reuse, modification and redistribution. The project-specific requests above should therefore be treated as attribution/branding guidelines unless a separate legally enforceable license replaces MIT.
 
 ---
 
-<div align="center"><img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&text=SATURO%20BOT%20V2&fontSize=30&fontAlignY=70&animation=twinkling">🕊️✨ SATURO BOT V2 ✨🕊️
+<div align="center">
 
-Developed & Enhanced with ❤️ by Anik Islam Sadik
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=140&section=footer&text=SATURO%20BOT%20V2&fontSize=30&fontAlignY=70&animation=twinkling" width="100%" alt="Footer">
 
-"🚀 Built with passion" • "⚡ Made for performance" • "💻 Crafted for developers"
+### 🕊️✨ SATURO BOT V2 ✨🕊️
 
-🌐 Repository: "lazyanik/SATURO-BOT-V2"
+**Developed & Enhanced with ❤️ by Anik Islam Sadik**
+
+🚀 Built with passion • ⚡ Made for performance • 💻 Crafted for developers
+
+🌐 Repository: [lazyanik/SATURO-BOT-V2](https://github.com/lazyanik/SATURO-BOT-V2)
 
 ⭐ If you find this project useful, consider giving it a star!
 
@@ -446,6 +528,8 @@ Developed & Enhanced with ❤️ by Anik Islam Sadik
 
 🔥 Keep coding • Keep creating • Keep improving 🔥
 
-<br>© Anik Islam Sadik — SATURO BOT V2
+<br>
+
+© Anik Islam Sadik — SATURO BOT V2
 
 </div>
