@@ -5,7 +5,7 @@ module.exports = {
   config: {
     name: "prefix",
     version: "1.9",
-    author: "NTKhang | Modified by Mohammad Alamin",
+    author: "NTKhang | Modified by Nabin mgrx",
     countDown: 5,
     role: 0,
     description: "View or change bot prefix (for chat or globally)",
@@ -87,7 +87,7 @@ module.exports = {
         hour: "2-digit",
         minute: "2-digit",
         second: "2-digit",
-        timeZone: "Asia/Dhaka"
+        timeZone: "Asia/kathmandu"
       });
  
       return message.reply({
@@ -96,10 +96,10 @@ module.exports = {
 👨‍💻 𝐘𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 𝐩𝐫𝐞𝐟𝐢𝐱: ${threadPrefix}
  
 ╭‣ 𝐀𝐝𝐦𝐢𝐧 👑
-╰‣  🦋 ꫝɴ֟፝ɪᴋ ɪꜱʟꫝᴍ 𝚂ꫝᴅɪᴋ ♡
+╰‣  Nabin mgrx
  
 ╭‣ 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 ⓕ
-╰‣ m.facebook.com/anik.islam.sadik`,
+╰‣ www.facebook.com/nabin.mgrx.237081`,
         attachment: await global.utils.getStreamFromURL(videoUrl)
       });
     }
