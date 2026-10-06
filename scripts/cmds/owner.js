@@ -7,7 +7,7 @@ module.exports = {
     name: "owner",
     aliases: ["info"],
     version: "1.3.0",
-    author: "Anik Islam Sadik",
+    author: "nabin",
     role: 0,
     shortDescription: "Owner information with image",
     category: "Information",
@@ -19,17 +19,15 @@ module.exports = {
   onStart: async function ({ api, event }) {
     const ownerText = 
 `╭─ 👑 Oᴡɴᴇʀ Iɴғᴏ 👑 ─╮
-│ 👤 Nᴀᴍᴇ       : ꫝɴ֟፝ɪᴋ ɪsʟꫝᴍ ѕꫝᴅɪᴋ 
-│ 🦋 Nɪᴄᴋ       : কাঁঠ গোলাপ 
+│ 👤 Nᴀᴍᴇ       : Nabin mgrx
+│ 🦋 Nɪᴄᴋ       : Nabbu 
 │ 🎂 Aɢᴇ        : 𝟭𝟴+
 │ 💘 Rᴇʟᴀᴛɪᴏɴ : 𝗠𝗶𝗻𝗴𝗲𝗹
 │ 🎓 Pʀᴏғᴇssɪᴏɴ : 𝗦𝘁𝘂𝗱𝗲𝗻𝘁
-│ 📚 Eᴅᴜᴄᴀᴛɪᴏɴ : 𝗜𝗻𝘁𝗲𝗿 𝟸𝗻𝗱
-│ 🏡 Lᴏᴄᴀᴛɪᴏɴ : 𝗠𝗮𝗗𝗮𝗥𝗶𝗣𝘂𝗥
+│ 📚 Eᴅᴜᴄᴀᴛɪᴏɴ : 12+
+│ 🏡 Lᴏᴄᴀᴛɪᴏɴ : Nepal
 ├─ 🔗 Cᴏɴᴛᴀᴄᴛ ─╮
-│ 📘 Facebook  :  id=61590594545013
-│ 💬 Messenger: id=61590594545013
-│ 📞 WhatsApp  : 01342-925672
+│ 📘 Facebook  :  https://www.facebook.com/nabin.mgrx.237081
 ╰────────────────╯`;
 
     const cacheDir = path.join(__dirname, "cache");
