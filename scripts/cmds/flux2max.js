@@ -35,11 +35,11 @@ const VALID_RATIOS = ["1:1", "16:9", "9:16", "4:3", "3:4"];
 
 module.exports = {
   config: {
-    name: "flux2max",
-    aliases: ["flux2-max", "fluxai"],
+    name: "flux2",
+    aliases: ["flux2", "fluxai"],
     version: "1.0.0",
-    author: "xalman",
-    countDown: 15,
+    author: "nabin",
+    countDown: 10,
     role: 0,
     shortDescription: { en: "Generate or edit images with Flux 2 Max" },
     longDescription: { en: "Text-to-image or image-edit generation using Flux 2 Max AI" },
@@ -60,7 +60,7 @@ module.exports = {
 
     if (!args.length) {
       return message.reply(
-        `🎨 𝗙𝗹𝘂𝘅 𝟮 𝗠𝗮𝘅\n━━━━━━━━━━━━━━━━━━\n📝 Usage:\n${prefix}${commandName} <prompt>\n${prefix}${commandName} <prompt> --ar <ratio>\n\nReply to an image to edit it.\nRatios: ${VALID_RATIOS.join(", ")}`
+        `🎨 𝗙𝗹𝘂𝘅2\n━━━━━━━━━━━━━━━━━━\n📝 Usage:\n${prefix}${commandName} <prompt>\n${prefix}${commandName} <prompt> --ar <ratio>\n\nReply to an image to edit it.\nRatios: ${VALID_RATIOS.join(", ")}`
       );
     }
 
@@ -117,7 +117,7 @@ module.exports = {
 
       return message.reply({
         body:
-          `🎨 𝗙𝗟𝗨𝗫 𝟮 𝗠𝗔𝗫\n` +
+          `🎨 𝗙𝗟𝗨𝗫2\n` +
           `━━━━━━━━━━━━━━━━━━\n` +
           `📐 𝗥𝗮𝘁𝗶𝗼   : ${ratio}\n` +
           `🎭 𝗠𝗼𝗱𝗲    : ${imageUrl ? "Edit" : "Text-to-Image"}\n` +
