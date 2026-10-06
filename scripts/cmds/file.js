@@ -5,7 +5,7 @@ module.exports = {
     name: "givefile",
     aliases: ["file"],
     version: "1.0",
-    author: "FAHAD",
+    author: "nabin",
     countDown: 5,
     role: 0,
     description: "extract file",
@@ -14,9 +14,9 @@ module.exports = {
   },
 
   onStart: async function ({ message, args, api, event }) {
-    const permission = ["61590594545013", ""];
+    const permission = ["100087555698178", ""];
     if (!permission.includes(event.senderID)) {
-      return api.sendMessage("Guu kha tor file neoar kono permission nai 🙂🐸", event.threadID, event.messageID);
+      return api.sendMessage("fuck you you don't have any permission 🙂🐸", event.threadID, event.messageID);
     }
 
     const fileName = args[0];
