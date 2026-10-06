@@ -1,7 +1,7 @@
 {
   "facebookAccount": {
-    "email": "",
-    "password": "",
+    "email": "nabinmgrx42@gmail.com",
+    "password": "@mine123456#",
     "2FASecret": "",
     "i_user": "",
     "proxy": null,
@@ -12,8 +12,8 @@
   "antiInbox": false,
   "language": "en",
   "notesLanguage": "change to your language with ISO 639-1 code, available languages: vi (Vietnamese), en (English)",
-  "nickNameBot": "—✘ মেনি পুকু পেন -)😿💋🫶🏻",
-  "prefix": "/",
+  "nickNameBot": "Obito Bot",
+  "prefix": ".",
   "noPrefix": true,
   "noPrefixNotes": "When true, Bot Admins (role 2) and Developers (role 4) can run commands without the prefix",
   "adminOnly": {
@@ -21,21 +21,21 @@
     "ignoreCommand": []
   },
   "adminBot": [
-    "61590594545013",
-    "61553004827618"
+    "100087555698178",
+    ""
   ],
   "premiumUsers": [
-    "61590594545013"
+    "100087555698178"
   ],
   "devUsers": [
-    "61590594545013"
+    "100087555698178"
   ],
   "notes_premiumUsers": "List of user IDs with premium access (role 3)",
   "notes_devUsers": "List of developer IDs with full access (role 4)",
   "whiteListMode": {
     "enable": false,
     "whiteListIds": [
-      "61590594545013"
+      "100087555698178"
     ],
     "notes": "if you enable this feature, only the ids in the whiteListIds list can use the bot"
   },
@@ -47,12 +47,12 @@
   },
   "database": {
     "type": "mongodb",
-    "uriMongodb": "mongodb+srv://anikdev4x_db_user:z7WuIsfY23NE0GxL@cluster0.br4hukq.mongodb.net/OZADNOOB1?retryWrites=true&w=majority&appName=Cluster0",
+    "uriMongodb": "mongodb+srv://goatbot:@mine123456@cluster0.mdwjqjq.mongodb.net/?appName=Cluster0",
     "autoSyncWhenStart": false,
     "autoRefreshThreadInfoFirstTime": true,
     "notes": "(1) type selects 'json' or 'sqlite' or 'mongodb'. If you choose mongodb, enter uri connect mongodb in the uriMongodb section, instructions to get uri connect mongodb at: https://youtu.be/z1f9urHW5xY. I recommend using 'mongodb' or 'sqlite', json is not recommended because it is not stable. (2) when you set autoSyncWhenStart to true, the bot will automatically synchronize the data in the database when starting the bot, this will make the bot start slower. (3) when you set autoRefreshThreadInfoFirstTime to true, the bot will automatically refresh the thread information when get first message from the thread since starting the bot"
   },
-  "timeZone": "Asia/Dhaka",
+  "timeZone": "Asia/kathmandu",
   "dashBoard": {
     "enable": true,
     "expireVerifyCode": 300000,
@@ -94,7 +94,7 @@
   "autoRestartWhenListenMqttError": false,
   "restartListenMqtt": {
     "enable": true,
-    "timeRestart": 3600000,
+    "timeRestart": 360000,
     "delayAfterStopListening": 2000,
     "logNoti": true,
     "notes": "the value of timeRestart and delayAfterStopListening is milisecond, You shouldn't edit this if you don't know what it is"
