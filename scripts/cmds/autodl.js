@@ -213,7 +213,7 @@ module.exports = {
   config: {
     name: "autodl",
     version: "7.0",
-    author: "Toshiro Editz",
+    author: "nabin",
     role: 0,
     category: "media",
     description: {
@@ -245,7 +245,7 @@ module.exports = {
     }
 
     api.setMessageReaction(
-      "🐤",
+      "⏳",
       event.messageID,
       event.threadID,
       () => {},
@@ -394,7 +394,7 @@ module.exports = {
           `┃ 👤 Author    : ${author}\n` +
           `┃ ⚡ Speed     : ${speed}s\n` +
           `╰━━━━━━━━━━━━━━━━╯\n` +
-          `⚡ Powered by —͟͞͞Sᴀ𓆩ᴅ𓆪ɪᴋ 모 ❄️`,
+          `⚡ Powered by Nabin mgrx❄️`,
 
         attachment:
           fs.createReadStream(filePath)
