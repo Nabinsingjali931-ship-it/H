@@ -8,7 +8,7 @@ module.exports = {
     name: "up",
     aliases: ["uptime"],
     version: "0.0.7",
-    author: "Anik Islam Sadik",
+    author: "nabin",
     countDown: 3,
     role: 0,
     shortDescription: "bot stats image",
@@ -27,7 +27,7 @@ module.exports = {
 
       const ping = Date.now() - event.timestamp;
       const cpuUsage = os.loadavg()[0].toFixed(2);
-      const owner = "ꫝɴ֟፝ɪᴋ ɪsʟꫝᴍ ѕꫝᴅɪᴋ";
+      const owner = "Nabin mgrx";
 
       const canvas = Canvas.createCanvas(1000, 500);
       const ctx = canvas.getContext("2d");
@@ -80,7 +80,7 @@ module.exports = {
         `Uptime: ${uptimeStr}`,
         `Ping: ${ping} ms`,
         `CPU Load: ${cpuUsage}`,
-        `Owner: Anik Islam Sadik`
+        `Owner: Nabin mgrx`
       ];
       ctx.fillStyle = "#F0F0F0";
       ctx.font = "bold 40px Sans";
@@ -106,7 +106,7 @@ module.exports = {
       );
 
       const bodyText = `
-✿•≫────•『ALYA BOT』•────≪•✿
+✿•≫────•『OBITO BOT』•────≪•✿
 ⏳ Uptime: ${uptimeStr}
 📶 Ping: ${ping} ms
 🖥 CPU Load: ${cpuUsage}
