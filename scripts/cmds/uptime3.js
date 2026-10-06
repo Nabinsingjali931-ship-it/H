@@ -6,7 +6,7 @@ module.exports = {
     name: "uptime3",
     aliases: ["up3"],
     version: "1.2",
-    author: "Anik Islam Sadik",
+    author: "nabin",
     countDown: 5,
     role: 0,
     shortDescription: "system uptime",
@@ -26,7 +26,7 @@ module.exports = {
     ];
 
     const loading = await api.sendMessage(
-      "SATURO BOT System...⏳\n" + loadStages[0],
+      "OBITO BOT System...⏳\n" + loadStages[0],
       event.threadID
     );
     const msgID = loading.messageID;
@@ -35,7 +35,7 @@ module.exports = {
       await delay(400);
       try {
         await api.editMessage(
-          "SATURO BOT System ✅\n" + loadStages[i],
+          "OBITO BOT System ✅\n" + loadStages[i],
           msgID
         );
       } catch (e) {
@@ -66,7 +66,7 @@ module.exports = {
 
       return `
 ╔═════════════════════╗
-║ ⚡ SATURO BOT SYSTEM ⚡
+║ ⚡ OBITO BOT SYSTEM ⚡
 ╠═════════════════════╣
 ║ ⏳ Uptime   : ${d}d ${h}h ${m}m ${s}s
 ║ 📅 Date     : ${date}
@@ -81,7 +81,7 @@ module.exports = {
 ║
 ║ ⚙️ PID      : ${process.pid}
 ║ 🛠 Node.js  : ${process.version}
-║ ⚡ Owner   : Anik Islam Sadik
+║ ⚡ Owner   : Nabin mgrx
 ╠═════════════════════╣
 ║    ✅ SYSTEM RUNNING
 ╚═════════════════════╝
