@@ -5,7 +5,7 @@ module.exports = {
     name: "pinterest",
     aliases: ["pin"],
     version: "2.0",
-    author: "Toshiro Editz",
+    author: "nabin",
     countDown: 5,
     role: 0,
     shortDescription: {
@@ -40,7 +40,7 @@ module.exports = {
       }
 
       if (limit < 1) limit = 1;
-      if (limit > 20) limit = 20;
+      if (limit > 50) limit = 50;
 
       const api = `https://toshiro-api-editz6t9.vercel.app/api/search/pin?keyword=${encodeURIComponent(keyword)}&limit=${limit}`;
 
