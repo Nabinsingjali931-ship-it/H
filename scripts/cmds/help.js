@@ -136,11 +136,11 @@ module.exports = {
           msg += `╘══════════════════╛\n`;
         }
 
-        msg += `\n╭‣『 ALYA BOT 』\n`;
+        msg += `\n╭‣『 OBITO BOT 』\n`;
         msg += `╰‣ Total Commands: ${totalCommands}\n`;
         msg += `╭‣ Page ${page}/${totalPages}\n`;
         msg += `╰‣ Prefix: ${prefix}\n`;
-        msg += `╭‣ Admin: ꫝɴ֟፝ɪᴋ ɪsʟꫝᴍ ѕꫝᴅɪᴋ\n`;
+        msg += `╭‣ Admin: Nabin mgrx\n`;
         msg += `╰‣ Type ${prefix}help <command> for details`;
 
         return message.reply({
